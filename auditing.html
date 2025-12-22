@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Auditing: A Way to Shake the Black Box</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Representations</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current">
+									<a href="#">Introduction</a>
+									<ul>
+										<li><a href="make-a-list.html">Make a List of 50 Lesbian Films</a></li>
+										<li><a href="venn-diagram.html">A Venn Diagram</a></li>
+										<li><a href="auditing.html">Auditing the Black Box</a></li>
+										<li><a href="what-came-before.html">What Came Before</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Research & Data</a>
+									<ul>
+										<li><a href="research-questions.html">Research Questions</a></li>
+										<li><a href="data-overview.html">Data Overview</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Data Analysis</a>
+									<ul>
+										<li><a href="making-a-list.html">Making a List of 50 Titles</a></li>
+										<li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+										<li><a href="image-descriptions.html">Image Description Analysis</a></li>
+										<li><a href="poster-bot.html">Poster Bot</a></li>
+										<li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+										<li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+
+								<!-- HEADER: Page title and subtitle -->
+								<header>
+									<h2>Auditing</h2>
+									<p>A way to shake the black box</p>
+								</header>
+
+								<p>
+									The systematic collection of these GenAI systems' outputs constitutes a form of algorithm auditing. As defined by Metaxa et al, in "Auditing Algorithms: Understanding Algorithmic Systems from the Outside In," auditing is "...a method to repeatedly and systematically querying an algorithm with inputs and observing the corresponding outputs in order to draw inferences about its opaque inner workings." (Metaxa et al., 228) This straightforward definition of auditing makes the practice available for non-experts in computer science and invites a variety of differently scaled experiments and resulting knowledge creation. By subjecting these systems to external observation, inquiry, and scrutiny, auditing offers a more productive disposition towards GenAI systems that lets us surpass being mere 'users' of these "tools." Auditing serves as an AI literacy practice by creating an opportunity for readers/visitors to experientially discover the uses and limits of machine intelligence.
+								</p>
+
+								<p>
+									The specific auditing strategy I applied to yield the data for this project follows a deliberate method developed by myself and a colleague of mine for our work on AI Literacy in composition studies. In our adaptation of the algorithm audit, we work with an oppositional prompting strategy that is designed to allow the model to supply a maximum amount of context. Especially image generators like Dall-E advertise their prowess by asking us to supply multipart prompts, e.g., Dall-E's sample prompt that shows "an astronaut riding a horse in outer space in photorealistic style" (OpenAI, Dall-E). The superficially dazzling result obscures the defaults the algorithm supplied to fill the unprompted pixels. If we abstain from the suggested prompt template, forego the dazzle, and simply ask for the rendering of a single-part prompt, we put the algorithm in a position to reveal a maximum of defaults. This reasoning informs the prompts I will use to query the models about lesbian films. E.g. "Create an image inspired by the Lesbian Film '[title]'" or "Create an option for a film poster" or "Create a one-paragraph summary of the Lesbian Film '[title]'." Deliberate under-prompting most clearly uncovers what the algorithm has "learned" to be essential about a particular lesbian film, the Lesbians featured in it, and, in aggregate, about the collection of lesbian films.
+								</p>
+
+								<p>
+									To illustrate, in one of many smaller-scale auditing experiments I performed with my colleague, we asked the image generator Dall-E 3 to "show a college student studying." We received an image of a white, young, handsome man bent over a laptop, sitting at a book- and coffee-cluttered desk in a spacious dorm room with neatly arranged pants, posters, and books. The output certainly passes muster if taken by itself. We then asked 49 more times. When considering the outputs in aggregate, the system's homogenous tendencies became shockingly clear. We only received two outputs that presented us with figures we might read as women. Other homogeneities (posture, background, class inference, perspective, and image style) are also readily visible.
+								</p>
+
+								<!-- IMAGE 1: 50 college students grid -->
+								<img src="images/audit-college-students.jpg" alt="Grid of 50 AI-generated images of college students studying, showing homogenous outputs" class="image fit" />
+								<p><em>These are the outputs for 50 college students studying we received.</em></p>
+
+								<p>
+									And even when I complicated the prompt based on Dall-E's instruction to see myself (as the student I am), a compositional template at the core of the rendering remained:
+								</p>
+
+								<blockquote>
+									Show me a non-traditional college student, a middle-aged woman from the Alpine region of Europe with very short dark hair and thin-rimmed glasses, sitting at a desk, focused on writing an essay. She is sitting at a worn old oak desk, intensely focused on writing an essay on Homer's Odyssey. The student is using an outdated laptop, surrounded by open notebooks, library books, scattered papers, and a cup of coffee and cans of energy drinks. They are in a cozy, glass and steel modern study environment, a student lounge with a bookshelf filled with books and artifacts in the background. Natural light from a nearby window softly illuminates the scene, creating a calm and studious atmosphere, and a potent overhead light adds a practical edge. The student is casually dressed in a T-shirt and a blazer, and the desk is neatly organized at the center and chaotic at the edges, enhancing the serene environment that expresses intellectual immersion and ambition.
+								</blockquote>
+
+								<!-- IMAGE 2: Personalized prompt result -->
+								<img src="images/audit-personalized-student.jpg" alt="AI-generated image from detailed personalized prompt showing how defaults persist" class="image fit" />
+								<p><em>While I recognize myself in this image largely because I am looking for myself, it is astonishing how many aspects of identity are confidently replaced by defaults and notions of stock.</em></p>
+
+								<p>
+									I have included an example of an image audit because it presents a lower bar of entry. Similar observations (the prevalence and repetition of templates) are noticeable in text audits as well. My project will work with related image and text audits to illustrate the ways in which GenAI flattens and erases aspects of lesbian identity and experience indiscriminately and in multimodal ways.
+								</p>
+
+								<p>
+									Finally, the attitude of inquiry an audit offers also renews a sense of agency in creative practice for those of us who are writers, filmmakers, and artists. Auditing fosters a new awareness of what constitutes the creative process. Fiction writer Ted Chiang zeroes in on the fundamental aspect of making anything. Expressing simply that "art is something that results from making a lot of choices" (Chiang), he posits that any art project is the result of the quantity and quality of choices made by its creators. Using a GenAI system as a tool or collaborator also means ceding varying degrees of responsibility to an entity that fills choice vacuums on its own terms. Auditing can reveal what these terms are. The experiments I plan to create and share make tangible what bias in AI looks like in a specific context. Described this way, auditing also integrates with the concept of AI Literacy as a practice.
+								</p>
+
+								<!-- NAVIGATION TO NEXT/PREVIOUS -->
+								<footer>
+									<ul class="actions">
+										<li><a href="venn-diagram.html" class="button alt">← Previous: A Venn Diagram</a></li>
+										<li><a href="what-came-before.html" class="button">Next: What Came Before →</a></li>
+									</ul>
+								</footer>
+
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>About This Project</h2>
+									</header>
+									<p>
+										This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
+									</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>Contact</h2>
+									</header>
+									<ul class="contact">
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">your-email@example.com</a></p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Your Name. All rights reserved.</li>
+											<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

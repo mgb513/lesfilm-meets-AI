@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>What Came Before: Related Research & Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Representations</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current">
+									<a href="#">Introduction</a>
+									<ul>
+										<li><a href="make-a-list.html">Make a List of 50 Lesbian Films</a></li>
+										<li><a href="venn-diagram.html">A Venn Diagram</a></li>
+										<li><a href="auditing.html">Auditing the Black Box</a></li>
+										<li><a href="what-came-before.html">What Came Before</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Research & Data</a>
+									<ul>
+										<li><a href="research-questions.html">Research Questions</a></li>
+										<li><a href="data-overview.html">Data Overview</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Data Analysis</a>
+									<ul>
+										<li><a href="making-a-list.html">Making a List of 50 Titles</a></li>
+										<li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+										<li><a href="image-descriptions.html">Image Description Analysis</a></li>
+										<li><a href="poster-bot.html">Poster Bot</a></li>
+										<li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+										<li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+
+								<!-- HEADER: Page title and subtitle -->
+								<header>
+									<h2>What Came Before</h2>
+									<p>Related research & projects, a lit review</p>
+								</header>
+
+								<section>
+									<header>
+										<h3>Early Algorithm Audits</h3>
+									</header>
+									<p>
+										An overview of critical early algorithm audits should begin with the work of Joy Buolamwini. In her groundbreaking doctoral work, Buolamwini advocates for auditing digital products to probe, track, analyze, and publicize the biases inherent in algorithmic systems. Coining the term "the coded gaze", Buolamwini's research began through her own lived experience of being misidentified by the very facial recognition systems she sought to study (Buolamwini).
+									</p>
+									<p>
+										Safiya Noble's "Algorithms of Oppression" observes how autocomplete options of Google searches, while offering positive correlation options to words like "white," further perpetuate negative biases associated with the term "black women" and other racial categories (Noble).
+									</p>
+									<p>
+										In another illustrative example of this kind of work, Metaxa et al. have demonstrated through algorithmic auditing that image searches for common occupations through engines like Google yield results that favor white, male representations over other gender and racial representations, both propagating biases and inaccurately aligning with available demographic data for those occupations (Metaxa et al., "An Image of Society").
+									</p>
+								</section>
+
+								<section>
+									<header>
+										<h3>Auditing GenAI Outputs</h3>
+									</header>
+									<p>
+										More recent projects work directly with auditing GenAI outputs. Although most of these projects are not explicitly identified as algorithm audits, according to Metaxa's definition, most of them certainly qualify as such:
+									</p>
+									<p>
+										Journalists for Bloomberg conducted a rigorous experiment to audit the image generator Stable Diffusion for systemic biases, including "more than 5000 images." This project asked Stable Diffusion's image generator to display/create images of people's faces by profession and other salient labels by asking for "A color photograph of [profession/label]." The authors then indexed the gender and skin color of the created portraits/pixel collages. The final product is a piece of journalism that incorporates a variety of data visualizations, narrates the experiment, analyzes the findings, and uncovers enduring race, gender, and class biases in the system's output. For example, Nicoletti and Bass discover that representations of "Architects" are largely legible as white men, while the faces representing "Housekeepers" are legible as darker-skinned women (Nicoletti & Bass).
+									</p>
+									<p>
+										On a smaller scale, but driven by a similar curiosity, in a GenAI discourse community on Reddit, the thread "Why Does AI see Beauty This Way?" makes observations based on an experimental dataset of 80 images. In this smaller audit, the experimenter collects and compares image outputs showing women's faces generated by Stable Diffusion in response to adjectives ranging from "gorgeous" to "ugly" which the experimenter then attaches to distinct racial categories. Consistent defaults emerge across racial categories. Old is synonymous with "ugly." "Ugly" is also correlated with not smiling or having combed hair. Looking at a matrix of image outputs in aggregate also demonstrates a lack of variety: imagine a sliding scale from Stereotypical Barbie to Weird Barbie.
+									</p>
+								</section>
+
+								<section>
+									<header>
+										<h3>Queer Representation in GenAI</h3>
+									</header>
+									<p>
+										Experiments on queer representation by image generators have also been conducted. Again in the journalism context, Reece Rogers' (of Wired Magazine) article "Here's How Generative AI depicts Queer People" offers an overview of the AI's problematic depiction of queer people, especially non-binary and trans people. In an academic forum, "Stereotypes and Smut: (Mis)representation of Non-cisgender Identities by Text-to-Image Models" qualifies as a related project. The authors, Ungless et al., "conduct a thorough analysis in which [they] compare the outputs of three image generation models for prompts containing cis-gender vs. non-cisgender identity terms." The authors offer the queried images, narrate the audit, and include data visualization to demonstrate that "certain non-cisgender identities are consistently (mis)represented as less human, more stereotyped and more sexualized" (Ungless et al.).
+									</p>
+									<p>
+										Independent from the above, two of the same authors also conducted an experiment on "Potential Pitfalls With Automatic Sentiment Analysis: The example of Queerphobic Bias" which can serve as an example for text-centered auditing (Ungless et al.). Related, a smaller experiment by Sabine Weber shared as a post via QueerInAI's website (an invaluable resource) uses sentiment analysis to ascertain ChatGPT's response to "queer" and traces the model's reaction to requests to define "dyke" which leads to a notice about content violation.
+									</p>
+								</section>
+
+								<section>
+									<header>
+										<h3>Pedagogical Approaches</h3>
+									</header>
+									<p>
+										GenAI image experiments purposely connected to text experiments show up in pedagogical collaborative practices of teachers of writing. One notable example comes from Maha Bali, early writing studies instigator of the critical literacy agenda, who includes GenAI images in her approach with students, documented in a short blog post "Where Are the Crescents in AI?" When Bali and her students probed GenAI's outputs in response to inputs about Palestine, text outputs demonstrated biases against Palestine. Those biases were more readily detectable in image outputs. Image audits can cultivate a particular kind of literacy that allows writers to reckon with these systems' defaults so that they "will be better able to resist using AI in ways that are harmful or inappropriate" (Bali).
+									</p>
+								</section>
+
+								<section>
+									<header>
+										<h3>Where This Project Fits</h3>
+									</header>
+									<p>
+										So, while larger-scoped audits of text and image analysis mostly exist separately and investigate AI-generated representations in contexts of and comparison to lived experience, the comprehensive analysis of AI-generated images plus connected texts based on existing cultural artifacts presents an expansion of existing scholarly and journalistic projects.
+									</p>
+								</section>
+
+								<!-- NAVIGATION TO NEXT/PREVIOUS -->
+								<footer>
+									<ul class="actions">
+										<li><a href="auditing.html" class="button alt">← Previous: Auditing</a></li>
+										<li><a href="research-questions.html" class="button">Next: Research Questions →</a></li>
+									</ul>
+								</footer>
+
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>About This Project</h2>
+									</header>
+									<p>
+										This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
+									</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>Contact</h2>
+									</header>
+									<ul class="contact">
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">your-email@example.com</a></p>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Your Name. All rights reserved.</li>
+											<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
