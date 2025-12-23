@@ -2906,3 +2906,113 @@ input, select, textarea {
 			}
 
 	}
+/* ============================================
+   CUSTOM ADDITIONS - START
+   ============================================ */
+
+/* Data Analysis grid - equal height cards */
+.data-analysis-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.data-analysis-grid > div {
+	display: flex;
+}
+
+.data-analysis-grid .box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.data-analysis-grid .box .image.featured img {
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.data-analysis-grid .box p {
+	flex-grow: 1;
+}
+
+/* Introduction section - equal height cards */
+#intro .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#intro .row > div {
+	display: flex;
+}
+
+#intro .box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 1.5em 1em;
+}
+
+#intro .box p {
+	flex-grow: 1;
+}
+
+#intro .box footer {
+	margin-top: auto;
+}
+
+/* Introduction section - smaller icons */
+#intro .icon.featured {
+	width: 4em;
+	padding: 0.75em 0 0.25em 0;
+	margin: 0 0 2em 0;
+}
+
+#intro .icon.featured:before {
+	font-size: 2em;
+}
+
+#intro .icon.featured:after {
+	bottom: -1em;
+	border-top-width: 1em;
+	border-left-width: 2em;
+	border-right-width: 2em;
+}
+
+#intro section {
+	margin: 1em 0;
+	padding: 1em 0;
+}
+
+/* Section headings - adjust spacing */
+header.major {
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+}
+
+#intro header.major {
+	margin-top: 0;
+}
+/* Center the icons in Introduction cards */
+/* Center the icons in Introduction cards */
+#intro .col-3 {
+	text-align: center;
+}
+
+/* Consistent spacing for section headings */
+#main header.major {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+/* Center the icons */
+#intro .icon.featured {
+	margin-left: auto;
+	margin-right: auto;
+}/* More space between banner and Introduction */
+#intro {
+	padding-top: 2em;
+}
+/* ============================================
+   CUSTOM ADDITIONS - END
+   ============================================ */
