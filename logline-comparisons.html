@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Say it in One Sentence: Log-Line Comparisons | Representations</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <h1><a href="index.html">Representations Squared</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Introduction</a>
+                        <ul>
+                            <li><a href="make-a-list.html">Make a List of 50 Lesbian Films</a></li>
+                            <li><a href="venn-diagram.html">A Venn Diagram</a></li>
+                            <li><a href="auditing.html">Auditing the Black Box</a></li>
+                            <li><a href="what-came-before.html">What Came Before</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Research & Data</a>
+                        <ul>
+                            <li><a href="research-questions.html">Research Questions</a></li>
+                            <li><a href="data-overview.html">Data Overview</a></li>
+                        </ul>
+                    </li>
+                    <li class="current">
+                        <a href="#">Data Analysis</a>
+                        <ul>
+                            <li><a href="list-analysis.html">Making a List of 50 Titles</a></li>
+                            <li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+                            <li><a href="image-descriptions.html">Image Description Analysis</a></li>
+                            <li><a href="poster-bot.html">Poster Bot</a></li>
+                            <li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+                            <li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+
+                <article class="box post">
+                    <header>
+                        <h2>Say it in One Sentence: Log-Line Comparisons</h2>
+                        <p>Tracing how GenAI transforms film summaries</p>
+                    </header>
+
+                    <p>
+                        In this short, 2-step game of telephone, I recreated the loglines for the 17 films I started with. The first step was asking both models (Dall-E 4 and GPT-5) to create an image inspired by the film titles in the dataset ("Create an image inspired by the lesbian film [title].") I then requested a logline for a film based on the image. This process yielded three distinct, small logline corpora: the original films' loglines, extracted from IMDb; loglines based on Dall-E 4 images; and loglines based on GPT-5's images.
+                    </p>
+                    <p>
+                        By analyzing these small corpora, the particular pattern of adjustment in the loglines can be traced.
+                    </p>
+
+                    <div style="text-align: center; margin: 1.5em 0;">
+                        <img src="images/original-loglines.jpg" alt="Word cloud and statistics based on the original loglines" style="max-width: 50%; height: auto;" />
+                    </div>
+                    <p>
+                        This image shows the word cloud and statistics based on the original loglines.
+                    </p>
+
+                    <section>
+                        <header>
+                            <h3>Dall-E 4's Loglines</h3>
+                        </header>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/d4-loglines.jpg" alt="Word cloud and statistics based on Dall-E's corpus of loglines" style="max-width: 50%; height: auto;" />
+                        </div>
+                        <p>
+                            This image shows a word cloud and statistics based on Dall-E's corpus of loglines.
+                        </p>
+                        <p>
+                            Looking at the statistical information, it's noteworthy that simplicity and accessibility declined. Dall-E more than doubled the word count (further evidence of GenAI's loquaciousness) and increased the readability index, making the texts more difficult to understand.
+                        </p>
+                        <p>
+                            Some of the keywords shifted. "Lesbian" fell out of the top 5, but words that carry more associations to traditional rom-coms, like "unexpected," "connection," and, to some extent, "quiet," come to the fore.
+                        </p>
+                        <p>
+                            Structurally, a fundamental adjustment is observable: The original loglines most often lead with character (e.g., "A young Black lesbian filmmaker sets out to…" or "A high school cheerleader is sent to…"), whereas the GenAI-generated loglines lead with the place/setting.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/d4-loglines-tree.jpg" alt="Word tree of the Dall-E-based logline corpus showing logline structures beginning with place descriptions" style="max-width: 70%; height: auto;" />
+                        </div>
+                        <p>
+                            This image shows a word tree of the Dall-E-based logline corpus, highlighting the logline structure that begins with a description of — an often "quiet" — place. ("Quiet," perhaps to counteract the emotional turbulence to come?)
+                        </p>
+                        <p>
+                            This shift of focus away from character parallels findings in the prompt-revision comparison (see <a href="image-descriptions.html">More Sentences, Please</a>), which details a shift away from relying on actors/people, specifically their facial expressions, to convey the emotional core and nuance of the films. Dall-E tends to outsource the creation of tone and atmosphere to the surrounding environment and landscape.
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>GPT-5's Loglines</h3>
+                        </header>
+                        <p>
+                            Adding another corpus of loglines generated by GPT-5 to the corpora discussed above shows how the models' priorities changed over time/between models.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/c5-loglines.jpg" alt="Corpus of loglines generated by GPT-5" style="max-width: 50%; height: auto;" />
+                        </div>
+                        <p>
+                            The image shows the corpus of loglines generated by GPT-5.
+                        </p>
+                        <p>
+                            The total word count remains more than twice that of the original corpus, and word repetition rises. This corpus has fewer unique words than the Dall-E-based corpus. "Identity" falls off the most frequent words list, and the introduction of "choose" as a central term is particularly interesting. It seems that the model's genre-concept of the logline has solidified around foregrounding conflict and its set-up. To achieve this, the model frequently resorts to a sentence structure that begins with "When…", introducing the conditions for an ensuing plot/conflict. This focus on conflict, inherent in situations that involve a difficult choice, then justifies the new prevalence of "choose."
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/c5-loglines-tree.jpg" alt="Word tree showing GPT-5's logline corpus with prevalence of 'choose'" style="max-width: 70%; height: auto;" />
+                        </div>
+                        <p>
+                            This image of GPT-5's logline corpus shows the prevalence of "choose" which serves to frame each around the protagonists' choice between challenging or not challenging (not explicitly named) norms.
+                        </p>
+                        <p>
+                            The generalization of a binary choice involving either "safety" and various iterations of being true to oneself is curious to note. The ambiguous framing flattens the truth of lesbian stories. Although it isn't untrue that safety and being true to oneself are often in conflict, it is also the broadest possible descriptor and applies to a range of experiences that deviate from normative expectations. Might we not say the same thing about a young vegan from a hunting family?
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Conclusion</h3>
+                        </header>
+                        <p>
+                            Overall, tracing the transformations of loglines shows that, when filtered through algorithms, the films' core message shifts from centering specific characters' discovery and expression of lesbian identity to a generalized experience of conflict that demands a choice between safety and self.
+                        </p>
+                    </section>
+
+                    <!-- Explore More Analysis -->
+                   <!-- Explore More Analysis -->
+<section>
+    <header>
+        <h3>Explore More Analysis</h3>
+    </header>
+    <div class="row" style="display: flex; flex-wrap: wrap;">
+        <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+            <article class="box post-summary" style="flex: 1;">
+                <h4><a href="list-analysis.html">Making a List of 50 Lesbian Film Titles</a></h4>
+            </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+            <article class="box post-summary" style="flex: 1;">
+                <h4><a href="image-descriptions.html">More Sentences, Please: Image Description Analysis</a></h4>
+            </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+            <article class="box post-summary" style="flex: 1;">
+                <h4><a href="poster-bot.html">Poster Bot: GenAI Film Posters & Title Comparison</a></h4>
+            </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+            <article class="box post-summary" style="flex: 1;">
+                <h4><a href="closeup-carol.html">Close-Up: Carol</a></h4>
+            </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+            <article class="box post-summary" style="flex: 1;">
+                <h4><a href="closeup-pariah.html">Close-Up: Pariah</a></h4>
+            </article>
+        </div>
+    </div>
+</section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>About This Project</h2>
+                            </header>
+                            <p>
+                                This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>Contact</h2>
+                            </header>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Mail</h3>
+                                    <p><a href="#">your-email@example.com</a></p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-12">
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; Your Name. All rights reserved.</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
