@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>More Sentences, Please: Image Description Analysis | Representations</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <h1><a href="index.html">Representations Squared</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Introduction</a>
+                        <ul>
+                            <li><a href="make-a-list.html">Make a List of 50 Lesbian Films</a></li>
+                            <li><a href="venn-diagram.html">A Venn Diagram</a></li>
+                            <li><a href="auditing.html">Auditing the Black Box</a></li>
+                            <li><a href="what-came-before.html">What Came Before</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Research & Data</a>
+                        <ul>
+                            <li><a href="research-questions.html">Research Questions</a></li>
+                            <li><a href="data-overview.html">Data Overview</a></li>
+                        </ul>
+                    </li>
+                    <li class="current">
+                        <a href="#">Data Analysis</a>
+                        <ul>
+                            <li><a href="list-analysis.html">Making a List of 50 Titles</a></li>
+                            <li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+                            <li><a href="image-descriptions.html">Image Description Analysis</a></li>
+                            <li><a href="poster-bot.html">Poster Bot</a></li>
+                            <li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+                            <li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+
+                <article class="box post">
+                    <header>
+                        <h2>More Sentences, Please: Image Description Analysis</h2>
+                        <p>How GenAI expands sparse prompts into detailed image descriptions</p>
+                    </header>
+
+                    <p>
+                        As part of the experiment, I asked two related/integrated models to generate images inspired by the titles of the 17 most frequently appearing films in the Lesbian film dataset, which was also assembled by GenAI. I asked Dall-E 4 to "Create an image inspired by the Lesbian film [title]." I knew from experience that this model would interpret image as a synonym for a still image, while GPT-5 would interpret "image" in a variety of styles, and frequently provide an output it qualified as oil painting. In order to manage the discrepancy outputs, I asked GPT-5: "Create a still inspired by the Lesbian film [title]."
+                    </p>
+                    <p>
+                        Then, to ascertain how Dall-E 4 and GPT-5 expanded upon the sparse prompt I provided, I collected Dall-E 4's grounding (the full prompt the model devised and used to render the requested image), which is provided alongside the image. For the images made by GPT-5, I asked, "Can you share how you adapted the prompt for this image?" and then collected a portion of the answer that provided a revised prompt. GPT-5 also often added additional parameters, like deliberately excluded parameters, e.g., "No logos, no identifiable public figures."
+                    </p>
+
+                    <section>
+                        <header>
+                            <h3>An Example: Desert Hearts</h3>
+                        </header>
+                        <p>
+                            For example, the prompts for an image or still inspired by the Lesbian film Desert Hearts were revised as follows:
+                        </p>
+                        <p>
+                            <strong>Dall-E 4:</strong><br />
+                            <em>A romantic and cinematic desert landscape inspired by the 1980s lesbian film 'Desert Hearts'. Two women stand close together in an intimate moment near a rustic motel, with vintage 1950s cars parked nearby. The scene captures a tender sunset glow casting warm tones over the Nevada desert. One woman has short dark hair and wears a retro 1950s-style shirt and trousers, while the other has blonde wavy hair in a vintage dress. Their body language is emotional and affectionate, reflecting a blossoming romance. The background includes red rock formations, desert brush, and a lonely highway leading into the horizon.</em>
+                        </p>
+                        <p>
+                            <strong>GPT-5:</strong><br />
+                            <em>This film photograph depicts two women in soft desert twilight, exchanging glances as the golden glow from the setting sun bathes them near a motel pool. One woman wears a light blue sundress, the other a cream blouse and beige trousers; both are framed by the vintage, neon-lit "Desert Inn" sign and the distant mountains, with muted pastels and warm tones that capture a nostalgic, serene mood.</em>
+                        </p>
+                        <p>
+                            To me, most striking in these examples and in the respective corpora overall is which aspects are described in detail and which are not described at all. That the women are young and white in this inspired still description seems to be assumed, while in films with POC protagonists, race and skin tone are described. Also noteworthy is the detailed focus on background and colors, dress and hair, as opposed to say, facial expressions. The emotional resonance of an image is often outsourced to the background and its atmosphere-creating color spectrum.
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Dall-E 4's Image Descriptions</h3>
+                        </header>
+                        <p>
+                            The models' priorities in generating images and image descriptions become even more apparent when we examine the most prevalent words in the corpora of collected descriptions from both models.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/d4-prompt-cloud.jpg" alt="Word cloud showing Dall-E 4's most frequently occurring terms in the image description corpus" style="max-width: 50%; height: auto;" />
+                        </div>
+                        <p>
+                            A word cloud showing Dall-E 4's most frequently occurring terms in the image description corpus.
+                        </p>
+                        <p>
+                            In addition to words qualifying the resonance the image is aiming for ("emotional," "intimate," and "scene"), "hair" and associated attributes, as well as terms further defining clothing and "background" are most prominent.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/d4-grounding-hair-tree.jpg" alt="Word tree showing Dall-E 4's occurrences and collocates of 'hair' in the image description corpus" style="max-width: 70%; height: auto;" />
+                        </div>
+                        <p>
+                            A word tree showing Dall-E 4's occurrences and collocates of "hair" in the image description corpus.
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>GPT-5's Image Descriptions</h3>
+                        </header>
+                        <p>
+                            As is discernible in the visualizations below, the image description shared by GPT-5 emphasizes adjectives like "warm," "soft," and "golden," focusing on achieving a homogeneously "warm" atmosphere.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/c5-prompt-stills-cloud.jpg" alt="Word cloud showing GPT-5's most frequently occurring terms in the image description corpus" style="max-width: 50%; height: auto;" />
+                        </div>
+                        <p>
+                            A word cloud showing GPT-5's most frequently occurring terms in the image description corpus.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/c5-prompt-warm-tree.jpg" alt="Word tree of GPT-5's image description corpus showing occurrences and collocates of 'warm'" style="max-width: 70%; height: auto;" />
+                        </div>
+                        <p>
+                            A word tree of GPT-5's image description corpus showing occurrences and collocates of "warm."
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Comparing the Image Outputs</h3>
+                        </header>
+                        <p>
+                            When comparing the two models, we can observe that the rendering of atmosphere in the newer model relies increasingly on lighting and color and less on the composition of the landscape. Both models produce homogeneity in the overall corpus of associated images, albeit located in different aspects of illustration.
+                        </p>
+                        <p>
+                            Looking at the associated image outputs, we can see that a consistent focus on meticulously rendered backgrounds gives way to more abstract mood lighting in several of the images.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/d4-images-pics.jpg" alt="Dall-E 4 generated images inspired by the 17 films" style="max-width: 60%; height: auto;" />
+                        </div>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/c5-stills-pics.jpg" alt="GPT-5 generated stills inspired by the 17 films" style="max-width: 60%; height: auto;" />
+                        </div>
+
+                        <p>
+                            What remains the same is the relative homogeneity of composition (largely a default) and the depiction of humans in both image sets. While the humans represented do shift from Dall-E 4's high-gloss hotness to something more realistic, diversity is confined to a selected number of hairstyles.
+                        </p>
+                    </section>
+
+                    <!-- Explore More Analysis -->
+                    <section>
+                        <header>
+                            <h3>Explore More Analysis</h3>
+                        </header>
+                        <div class="row" style="display: flex; flex-wrap: wrap;">
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="list-analysis.html">Making a List of 50 Lesbian Film Titles</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="logline-comparisons.html">Say it in One Sentence: Log-Line Comparisons</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="poster-bot.html">Poster Bot: GenAI Film Posters & Title Comparison</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="closeup-carol.html">Close-Up: Carol</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="closeup-pariah.html">Close-Up: Pariah</a></h4>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>About This Project</h2>
+                            </header>
+                            <p>
+                                This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>Contact</h2>
+                            </header>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Mail</h3>
+                                    <p><a href="#">your-email@example.com</a></p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-12">
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; Your Name. All rights reserved.</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
