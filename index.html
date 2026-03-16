@@ -5,316 +5,322 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>The Representations of our Representations</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<head>
+    <title>Three Degrees of Representation (3°R)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Reduce space after banner */
+        #main {
+            padding-top: 1em;
+        }
+        
+        .expandable-content {
+            display: none;
+        }
+        .expandable-content.visible {
+            display: block;
+        }
+        .expand-toggle {
+            cursor: pointer;
+            color: #c94663;
+            border-bottom: 1px dotted #c94663;
+        }
+        .expand-toggle:hover {
+            color: #a83850;
+        }
+        .background-links {
+            text-align: center;
+            padding: 1em 0;
+        }
+        .background-links a {
+            margin: 0 0.75em;
+            color: #666;
+            border-bottom: 1px dotted #999;
+        }
+        .background-links a:hover {
+            color: #c94663;
+        }
+        .background-links .separator {
+            color: #ccc;
+        }
+        .about-section {
+            display: flex;
+            gap: 2em;
+            align-items: flex-start;
+        }
+        .about-image {
+            flex: 0 0 35%;
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+        }
+        .about-text {
+            flex: 1;
+        }
+        @media screen and (max-width: 736px) {
+            .about-section {
+                flex-direction: column;
+            }
+            .about-image {
+                flex: none;
+                width: 100%;
+            }
+        }
+		#banner {
+    padding: 18em 0 18em 0;
+}
+    </style>
+</head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header">
+        <!-- Header -->
+        <section id="header">
 
-					<!-- Logo -->
-						<h1><a href="index.html">Representations Squared</a></h1>
+            <!-- Logo -->
+            <h1><a href="index.html">Three Degrees of Representation (3°R)</a></h1>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Introduction</a>
-									<ul>
-										<li><a href="make-a-list.html">Make a List of 50 Lesbian Films</a></li>
-										<li><a href="venn-diagram.html">A Venn Diagram</a></li>
-										<li><a href="auditing.html">Auditing the Black Box</a></li>
-										<li><a href="what-came-before.html">What Came Before</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Research & Data</a>
-									<ul>
-										<li><a href="research-questions.html">Research Questions</a></li>
-										<li><a href="data-overview.html">Data Overview</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Data Analysis</a>
-									<ul>
-										<li><a href="making-a-list.html">Making a List of 50 Titles</a></li>
-										<li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
-										<li><a href="image-descriptions.html">Image Description Analysis</a></li>
-										<li><a href="poster-bot.html">Poster Bot</a></li>
-										<li><a href="closeup-carol.html">Close-Up: Carol</a></li>
-										<li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Background</a>
+                        <ul>
+                            <li><a href="make-a-list.html">Point of Departure</a></li>
+                            <li><a href="venn-diagram.html">A Venn Diagram</a></li>
+                            <li><a href="auditing.html">Auditing the Black Box</a></li>
+                            <li><a href="what-came-before.html">What Came Before</a></li>
+                            <li><a href="research-questions.html">Research Questions</a></li>
+                            <li><a href="data-overview.html">Data Overview</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Data Analysis</a>
+                        <ul>
+                            <li><a href="list-analysis.html">Making a List of 50 Titles</a></li>
+                            <li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+                            <li><a href="image-descriptions.html">Image Description Analysis</a></li>
+                            <li><a href="poster-bot.html">Poster Bot</a></li>
+                            <li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+                            <li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
-					<!-- Banner -->
-						<section id="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/pic00.jpg'); background-size: cover; background-position: center;">
-    						<header>
-       							 <h2>Auditing GenAI through Lesbian Film Data</h2>
-       							 <p>The Representations of our Representations will be our Representations</p>
-   							</header>
-						</section>
+            <!-- Banner -->
+            <section id="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('images/pic00.jpg'); background-size: cover; background-position: center;">
+                <header>
+                    <h2>Auditing GenAI through Lesbian Film Data</h2>
+                    <p>The Representations of our Representations will be our Representations</p>
+                </header>
+            </section>
 
-					<!-- Intro: INTRODUCTION SECTION (Linear, numbered) -->
-						<section id="intro" class="container">
-							<header class="major">
-								<h2>Introduction</h2>
-								<p>Start here and follow the path</p>
-							</header>
-							<div class="row">
-								<div class="col-3 col-6-medium col-12-small">
-									<section class="box">
-										<span class="icon solid featured fa-list-ol"></span>
-										<header>
-											<h3>1. Make a List</h3>
-										</header>
-										<p>How the point of departure became the point of departure.</p>
-										<footer>
-											<a href="make-a-list.html" class="button alt">Read</a>
-										</footer>
-									</section>
-								</div>
-								<div class="col-3 col-6-medium col-12-small">
-									<section class="box">
-										<span class="icon solid featured alt fa-circle-notch"></span>
-										<header>
-											<h3>2. A Venn Diagram</h3>
-										</header>
-										<p>GenAI & Lesbian Representation & Fanfiction</p>
-										<footer>
-											<a href="venn-diagram.html" class="button alt">Read</a>
-										</footer>
-									</section>
-								</div>
-								<div class="col-3 col-6-medium col-12-small">
-									<section class="box">
-										<span class="icon solid featured alt2 fa-box-open"></span>
-										<header>
-											<h3>3. Auditing</h3>
-										</header>
-										<p>Making Inferences as a way to shake the black box.</p>
-										<footer>
-											<a href="auditing.html" class="button alt">Read</a>
-										</footer>
-									</section>
-								</div>
-								<div class="col-3 col-6-medium col-12-small">
-									<section class="box">
-										<span class="icon solid featured fa-book"></span>
-										<header>
-											<h3>4. What Came Before</h3>
-										</header>
-										<p>Related research & projects, a lit review.</p>
-										<footer>
-											<a href="what-came-before.html" class="button alt">Read</a>
-										</footer>
-									</section>
-								</div>
-							</div>
-						</section>
+        </section>
 
-				</section>
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
+                <!-- About This Project -->
+                <section>
+                    <header class="major">
+                        <h2>About This Project</h2>
+                    </header>
+                    <div class="about-section">
+                        <div class="about-image">
+                            <img src="images/about-image.jpg" alt="About this project" />
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
+                                <span class="expand-toggle" onclick="toggleExpand()"> Read more...</span>
+                            </p>
+                            <div id="expanded-about" class="expandable-content">
+                                <p>
+                                    [Placeholder paragraph 1: ~100 words about the broader context of AI and representation, why this matters, etc.]
+                                </p>
+                                <p>
+                                    [Placeholder paragraph 2: ~100 words about the specific approach—algorithm auditing, what it reveals, etc.]
+                                </p>
+                                <p>
+                                    [Placeholder paragraph 3: ~100 words about lesbian cinema as a case study—why this specific corpus, what makes it a useful lens, etc.]
+                                </p>
+                                <p>
+                                    [Placeholder paragraph 4: ~100 words about the datasets created—lists, loglines, images, posters, etc.]
+                                </p>
+                                <p>
+                                    [Placeholder paragraph 5: ~100 words about findings and patterns observed across the experiments.]
+                                </p>
+                                <p>
+                                    [Placeholder paragraph 6: ~100 words about implications—what this means for AI literacy, representation, creative practice, etc.]
+                                </p>
+                                <p>
+                                    [Placeholder paragraph 7: ~100 words inviting the reader to explore the analysis pages.]
+                                </p>
+                                <p>
+                                    <span class="expand-toggle" onclick="toggleExpand()">Show less</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-						<!-- Research Questions Section (Compact) -->
-						<div class="row">
-						<div class="col-12">
-				<section>
-			<header class="major">
-				<h2>Research Questions & Data Overview</h2>
-			</header>
-			<div class="row">
-				<div class="col-2 col-12-medium">
-					<!-- empty spacer column -->
-				</div>
-				<div class="col-4 col-12-medium">
-					<section class="box" style="text-align: center;">
-						<header>
-							<h3>Research Questions</h3>
-						</header>
-						<p>The research questions guiding this investigation.</p>
-						<a href="research-questions.html" class="button alt">Read</a>
-					</section>
-				</div>
-				<div class="col-4 col-12-medium">
-					<section class="box" style="text-align: center;">
-						<header>
-							<h3>The Data</h3>
-						</header>
-						<p>Lists, Posters, Stills, Loglines, Prompts, and Titles.</p>
-						<a href="data-overview.html" class="button alt">Read</a>
-					</section>
-				</div>
-				<div class="col-2 col-12-medium">
-					<!-- empty spacer column -->
-				</div>
-			</div>
-		</section>
-	</div>
-</div>
+                <!-- Data Analysis Section (Grid, any order) -->
+                <div class="row data-analysis-grid">
+                    <div class="col-12">
+                        <section>
+                            <header class="major">
+                                <h2>Data Analysis & Findings</h2>
+                                <p>Explore in any order</p>
+                            </header>
+                            <div class="row">
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="list-analysis.html" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Making a List of 50 Lesbian Film Titles</h3>
+                                        </header>
+                                        <p>How GenAI constructs a film list.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="list-analysis.html" class="button alt">Explore</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="logline-comparisons.html" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Say it in one Sentence: The Log-Lines</h3>
+                                        </header>
+                                        <p>Log-Line Comparisons across sources.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="logline-comparisons.html" class="button alt">Explore</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="image-descriptions.html" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>More Sentences, Please</h3>
+                                        </header>
+                                        <p>Image Description Analysis.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="image-descriptions.html" class="button alt">Explore</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="poster-bot.html" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Poster Bot</h3>
+                                        </header>
+                                        <p>GenAI Film Posters & Title Comparison.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="poster-bot.html" class="button alt">Explore</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="closeup-carol.html" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Close-Up: Carol</h3>
+                                        </header>
+                                        <p>A deep dive into one film's data journey.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="closeup-carol.html" class="button alt">Explore</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="closeup-pariah.html" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Close-Up: Pariah</h3>
+                                        </header>
+                                        <p>A deep dive into one film's data journey.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="closeup-pariah.html" class="button alt">Explore</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
 
-						<!-- Data Analysis Section (Grid, any order) -->
-						<div class="row data-analysis-grid">
-							<div class="col-12">
-								<section>
-									<header class="major">
-										<h2>Data Analysis & Findings</h2>
-										<p>Explore in any order</p>
-									</header>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<section class="box">
-												<a href="making-a-list.html" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-												<header>
-													<h3>Making a List of 50 Lesbian Film Titles</h3>
-												</header>
-												<p>How GenAI constructs a film list.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="list-analysis.html" class="button alt">Explore</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<section class="box">
-												<a href="logline-comparisons.html" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-												<header>
-													<h3>Say it in one Sentence: The Log-Lines</h3>
-												</header>
-												<p>Log-Line Comparisons across sources.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="logline-comparisons.html" class="button alt">Explore</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<section class="box">
-												<a href="image-descriptions.html" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-												<header>
-													<h3>More Sentences, Please</h3>
-												</header>
-												<p>Image Description Analysis.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="image-descriptions.html" class="button alt">Explore</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<section class="box">
-												<a href="poster-bot.html" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-												<header>
-													<h3>Poster Bot</h3>
-												</header>
-												<p>GenAI Film Posters & Title Comparison.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="poster-bot.html" class="button alt">Explore</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<section class="box">
-												<a href="closeup-carol.html" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-												<header>
-													<h3>Close-Up: Carol</h3>
-												</header>
-												<p>A deep dive into one film's data journey.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="closeup-carol.html" class="button alt">Explore</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<section class="box">
-												<a href="closeup-pariah.html" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-												<header>
-													<h3>Close-Up: Pariah</h3>
-												</header>
-												<p>A deep dive into one film's data journey.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="closeup-pariah.html" class="button alt">Explore</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-									</div>
-								</section>
-							</div>
-						</div>
+                <!-- Background Section -->
+                <section>
+                    <header class="major">
+                        <h2>Background</h2>
+                    </header>
+                    <div class="background-links">
+                        <a href="make-a-list.html">Point of Departure</a>
+                        <span class="separator">|</span>
+                        <a href="venn-diagram.html">A Venn Diagram</a>
+                        <span class="separator">|</span>
+                        <a href="auditing.html">Auditing</a>
+                        <span class="separator">|</span>
+                        <a href="what-came-before.html">What Came Before</a>
+                        <span class="separator">|</span>
+                        <a href="research-questions.html">Research Questions</a>
+                        <span class="separator">|</span>
+                        <a href="data-overview.html">Data Overview</a>
+                    </div>
+                </section>
 
-					</div>
-				</section>
+            </div>
+        </section>
 
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-								<section>
-									<header>
-										<h2>About This Project</h2>
-									</header>
-									<p>
-										This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
-									</p>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>Contact</h2>
-									</header>
-									<ul class="contact">
-										<li>
-											<h3>Mail</h3>
-											<p><a href="#">your-email@example.com</a></p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-12">
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; Maria G. Baker. All rights reserved.</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-								<!-- Copyright -->
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; Your Name. All rights reserved.</li>
-											<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
+    </div>
 
-							</div>
-						</div>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleExpand() {
+            var content = document.getElementById('expanded-about');
+            content.classList.toggle('visible');
+        }
+    </script>
+</body>
 </html>
