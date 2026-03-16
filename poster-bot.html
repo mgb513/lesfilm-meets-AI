@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Poster Bot: GenAI Film Posters & Title Comparison | Three Degrees of Representation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        #footer {
+            background: #282828;
+            color: rgba(255, 255, 255, 0.65);
+        }
+        #footer a {
+            color: rgba(255, 255, 255, 0.65);
+        }
+        #footer a:hover {
+            color: #fff;
+        }
+        #footer h2, #footer h3 {
+            color: #fff;
+        }
+        
+        /* Explore More cards styling */
+        .box.post-summary {
+            border-left: 3px solid #c94663;
+            background: #f5f5f5;
+            transition: background 0.2s ease;
+        }
+        .box.post-summary:hover {
+            background: #e8e8e8;
+        }
+    </style>
+</head>
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <h1><a href="index.html">Three Degrees of Representation (3°R)</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Background</a>
+                        <ul>
+                            <li><a href="make-a-list.html">Point of Departure</a></li>
+                            <li><a href="venn-diagram.html">A Venn Diagram</a></li>
+                            <li><a href="auditing.html">Auditing the Black Box</a></li>
+                            <li><a href="what-came-before.html">What Came Before</a></li>
+                            <li><a href="research-questions.html">Research Questions</a></li>
+                            <li><a href="data-overview.html">Data Overview</a></li>
+                        </ul>
+                    </li>
+                    <li class="current">
+                        <a href="#">Data Analysis</a>
+                        <ul>
+                            <li><a href="list-analysis.html">Making a List of 50 Titles</a></li>
+                            <li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+                            <li><a href="image-descriptions.html">Image Description Analysis</a></li>
+                            <li><a href="poster-bot.html">Poster Bot</a></li>
+                            <li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+                            <li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+
+                <article class="box post">
+                    <header>
+                        <h2>Poster Bot: GenAI Film Posters & Title Comparison</h2>
+                        <p>How algorithms remix film posters and titles</p>
+                    </header>
+
+                    <section>
+                        <header>
+                            <h3>The Original Posters</h3>
+                        </header>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/pic-oposters.jpg" alt="Original film posters from the 17 films in the dataset" style="max-width: 80%; height: auto;" />
+                        </div>
+
+                        <p>
+                            Among the 17 film titles used to generate image and text outputs, a variety of genres are represented. The original posters, as found on IMDb, are collected above. We can see a wide variety of design approaches, each reflecting the aesthetics of its time, yet all honoring any genre expectations viewers might have of the film poster. The title is prominently displayed, and an actor or actors in their roles or the ensemble are prominently presented, though not necessarily from a predictable perspective.
+                        </p>
+                        <p>
+                            The background is more likely to be abstract, and sometimes color blocks or image frames contribute to the poster's overall aesthetic (e.g., Go Fish and Saving Face). Notably, in a majority of posters, the background is blurred or negligible, and close-ups of faces as well as constellations of one to four actors create variety in composition. Overall, the relationship between actors and title fonts creates the defining aesthetics of these posters.
+                        </p>
+                        <p>
+                            If we look at the titles these fonts render, we can see a wider variety as well. The prevalence of single-word (Carol, Gia, Bound, Fire) and notably long titles (Portrait of a Lady on Fire, The Incredibly True Adventures of Two Girls in Love) defines this data set (and perhaps reveals the genre's prevailing titling conventions).
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Dall-E 4's Posters</h3>
+                        </header>
+                        <p>
+                            As part of the experiment, I asked both models to create posters based on loglines they had produced, which were themselves based on images generated in response to the titles of the 17 films. This short chain of iterations might replicate a three-step remixing path that can show how training data is mobilized by GenAI. In addition to the poster request, I also asked the models to include a title on the poster.
+                        </p>
+                        <p>
+                            Below is the grid of posters produced by Dall-E 4. We can see that the film poster's genre features, as established in the set of original posters, have been abandoned. What emerges instead is a curious mixture of Dall-E 4's aesthetic particularities and romance novel covers.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/pic-4posters.jpg" alt="Dall-E 4 generated film posters" style="max-width: 80%; height: auto;" />
+                        </div>
+
+                        <p>
+                            Dall-E's tendency to focus on meticulously detailed backgrounds is a defining feature of these new posters. From ominous cloud cover to perfectly centered windows and mirrors to stereotypical geographical markers (see the Manhattan Bridge), the background takes on the responsibility of creating the emotional essence and expressiveness. Where actors' faces and emotional expressions did much of that work in the original posters, now a clearly defined landscape and curiously amber lighting take over. Also notable is the homogeneous perspective on the women. Moving further away from a focus on faces observed in a portion of the original posters, we now get either full-body or ¾ perspectives, and characters are almost exclusively presented as pairs or, in a small subgroup, as lonely figures.
+                        </p>
+                        <p>
+                            When we look more closely at the figures themselves, the particular homogeneity of "hotness" is noticeable. Dall-E has been known to render women like versions of Barbie dolls, defaulting over and over again to a representation of women that is predominantly young, white, and physically standardized. Clothing and hair are what define these women as belonging to the 50s, earlier periods, or the present.
+                        </p>
+                        <p>
+                            Also observable is a reduction in font variety, and the film's new titles are less prominently displayed. The new titles turn away from single names, and two-word variations abound. Bound is now Crimson Veil, Gia is Smoke and Rouge, But I'm a Cheerleader is now Glitter Camp, and The Incredibly True Adventures of Two Girls in Love is transformed into Mixtapes & Sunsets.
+                        </p>
+                        <p>
+                            Overall, these renderings shifted towards markers of genre fiction, and the homogeneity in Dall-E's outputs flattened the variety we observed in the original poster set.
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>GPT-5's Posters</h3>
+                        </header>
+                        <p>
+                            Having asked GPT-5 for the same outputs, a movie poster including a title based on a logline, we can observe GPT's rendering in comparison to Dall-E 4's, as well as in comparison to the original posters.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/pic-5posters.jpg" alt="GPT-5 generated film posters" style="max-width: 80%; height: auto;" />
+                        </div>
+
+                        <p>
+                            GPT-5's take on the prompt shows that some of Dall-E's tendencies towards particular homogenization have been mitigated. The hotness of the featured humans has been corrected to something more recognizable and less doll-like. Instead, an odd new homogeneity emerges in the figures. In many cases, the average woman rendered here is young, white, or racially ambiguous, and two women depicted noticeably resemble each other. In addition to the composition of the figures, centered and symmetrical (also notice how arms and hands are positioned to complete this symmetry), this model's renderings double down on the mirroring effect. This brings to mind the doppelganger trope, which names the depiction of Lesbian lovers as doppelgangers (Jenzen).
+                        </p>
+                        <p>
+                            The meticulous rendering of the background produced by the previous model has been replaced by blurred color patches or hints of a less exciting landscape. In the absence of defined surroundings, lighting and color now entirely take over the role of creating ambience and emotional tenor. What color scheme a movie is assigned seems to depend fundamentally on the genre. A film deemed to be in the "drama" category is assigned a dark spectrum, arranged around an amber source of light, while comedies live in pastel tones. Fonts play along with this new basic genre distinction. Serif fonts for the darker themes; sans-serif for the lighter ones. The poster design options in this model seem more limited than before. Gone are even occasional overlays or atypical framings, and it seems the model's understanding of the movie poster is composed of distinct, separate elements that emerge as default building blocks rather than being created from a holistic concept.
+                        </p>
+                        <p>
+                            Overall, the impression is one of a book cover created by a non-designer with little editorial wisdom. And again, it is less interesting to poke at the model's competency, but more useful to observe the patterns and defaults the algorithm mobilizes when left to make its own decisions. While each of these posters, seen separately, might serve its purpose, in aggregate, imagined as part of an output economy, these posters narrow our ability to imagine fuller, more nuanced stories of Lesbian women.
+                        </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Title Comparison</h3>
+                        </header>
+                        <p>
+                            Finally, we might observe the titles here as well.
+                        </p>
+
+                        <div style="text-align: center; margin: 1.5em 0;">
+                            <img src="images/pic-titles.jpg" alt="Comparison of original and AI-generated film titles" style="max-width: 70%; height: auto;" />
+                        </div>
+
+                        <p>
+                            The new titles have become interchangeable, and they transmit nothing but a very basic hint that what is to come will most likely be a genre romance. If original titles could be provocative (Pariah), or specific with allusion (The Miseducation of Cameron Post), these algorithmically tuned titles are edgeless, all-purpose word pairings, composites of preposition and weather condition, e.g., Through the Rain; Beneath the Wide Sky, and forgettable.
+                        </p>
+                        <p>
+                            The loss of meaning that accompanies a loss of specificity is most striking and noticeable in the data set's films featuring protagonists of color: The Handmaiden became Paper Lanterns; The Watermelon Woman became Be Seen; and Pariah became Bedroom Sonnets.
+                        </p>
+                        <p>
+                            To see these transformations in specific contexts, we can turn to a more thorough analysis presented in two Case Studies: <a href="closeup-carol.html">Close-Up: Carol</a> and <a href="closeup-pariah.html">Close-Up: Pariah</a>.
+                        </p>
+                    </section>
+
+                    <!-- Explore More Analysis -->
+                    <section>
+                        <header>
+                            <h3>Explore More Analysis</h3>
+                        </header>
+                        <div class="row" style="display: flex; flex-wrap: wrap;">
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="list-analysis.html">Making a List of 50 Lesbian Film Titles</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="logline-comparisons.html">Say it in One Sentence: Log-Line Comparisons</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="image-descriptions.html">More Sentences, Please: Image Description Analysis</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="closeup-carol.html">Close-Up: Carol</a></h4>
+                                </article>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small" style="display: flex;">
+                                <article class="box post-summary" style="flex: 1;">
+                                    <h4><a href="closeup-pariah.html">Close-Up: Pariah</a></h4>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>About This Project</h2>
+                            </header>
+                            <p>
+                                This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>Contact</h2>
+                            </header>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Mail</h3>
+                                    <p><a href="#">mbaker3@gradcenter.cuny.edu</a></p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-12">
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; mgb513. All rights reserved.</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
