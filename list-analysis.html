@@ -1,254 +1,547 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Making a List of 50 Lesbian Film Titles | Representations</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  <style>
-    #footer {
-        background: #282828;
-        color: rgba(255, 255, 255, 0.65);
-    }
-    #footer a {
-        color: rgba(255, 255, 255, 0.65);
-    }
-    #footer a:hover {
-        color: #fff;
-    }
-    #footer h2, #footer h3 {
-        color: #fff;
-    }
-    
-    /* Explore More cards styling */
-    .box.post-summary {
-        border-left: 3px solid #c94663;
-        background: #f5f5f5;
-        transition: background 0.2s ease;
-    }
-    .box.post-summary:hover {
-        background: #e8e8e8;
-    }
+<title>Making a List of 50 Lesbian Film Titles | Representations</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+#footer {
+    background: #282828;
+    color: rgba(255, 255, 255, 0.65);
+}
+#footer a {
+    color: rgba(255, 255, 255, 0.65);
+}
+#footer a:hover {
+    color: #fff;
+}
+#footer h2, #footer h3 {
+    color: #fff;
+}
+/* Explore More cards styling */
+.box.post-summary {
+    border-left: 3px solid #c94663;
+    background: #f5f5f5;
+    transition: background 0.2s ease;
+}
+.box.post-summary:hover {
+    background: #e8e8e8;
+}
+
+/* ===================== */
+/* UNIFIED CHART STYLING */
+/* ===================== */
+.chart-container {
+    margin: 2em auto;
+    text-align: center;
+    max-width: 700px;
+}
+.chart-container svg {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-size: 13px;
+}
+/* Taller charts (Top 17 bar, timeline scatter) */
+.chart-container.tall {
+    max-width: 650px;
+}
+.chart-caption {
+    text-align: center;
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #666;
+    font-size: 0.95em;
+}
 </style>
 </head>
 <body class="no-sidebar is-preload">
-    <div id="page-wrapper">
+<div id="page-wrapper">
 
-        <!-- Header -->
-       <!-- Header -->
+<!-- Header -->
 <section id="header">
-    <h1><a href="index.html">Three Degrees of Representation (3°R)</a></h1>
-    <nav id="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <a href="#">Background</a>
-                <ul>
-                    <li><a href="make-a-list.html">Point of Departure</a></li>
-                    <li><a href="venn-diagram.html">A Venn Diagram</a></li>
-                    <li><a href="auditing.html">Auditing the Black Box</a></li>
-                    <li><a href="what-came-before.html">What Came Before</a></li>
-                    <li><a href="research-questions.html">Research Questions</a></li>
-                    <li><a href="data-overview.html">Data Overview</a></li>
-                </ul>
-            </li>
-            <li class="current">
-                <a href="#">Data Analysis</a>
-                <ul>
-                    <li><a href="list-analysis.html">Making a List of 50 Titles</a></li>
-                    <li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
-                    <li><a href="image-descriptions.html">Image Description Analysis</a></li>
-                    <li><a href="poster-bot.html">Poster Bot</a></li>
-                    <li><a href="closeup-carol.html">Close-Up: Carol</a></li>
-                    <li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+<h1><a href="index.html">Three Degrees of Representation (3°R)</a></h1>
+<nav id="nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li>
+<a href="#">Background</a>
+<ul>
+<li><a href="make-a-list.html">Point of Departure</a></li>
+<li><a href="venn-diagram.html">A Venn Diagram</a></li>
+<li><a href="auditing.html">Auditing the Black Box</a></li>
+<li><a href="what-came-before.html">What Came Before</a></li>
+<li><a href="research-questions.html">Research Questions</a></li>
+<li><a href="data-overview.html">Data Overview</a></li>
+</ul>
+</li>
+<li class="current">
+<a href="#">Data Analysis</a>
+<ul>
+<li><a href="list-analysis.html">Making a List of 50 Titles</a></li>
+<li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+<li><a href="image-descriptions.html">Image Description Analysis</a></li>
+<li><a href="poster-bot.html">Poster Bot</a></li>
+<li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+<li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </section>
 
-        <!-- Main -->
-        <section id="main">
-            <div class="container">
+<!-- Main -->
+<section id="main">
+<div class="container">
+<article class="box post">
+<header>
+<h2>Making a List of 50 Lesbian Film Titles</h2>
+<p>How ChatGPT assembles a canon</p>
+</header>
 
-                <article class="box post">
-                    <header>
-                        <h2>Making a List of 50 Lesbian Film Titles</h2>
-                        <p>How ChatGPT assembles a canon</p>
-                    </header>
+<p>
+I began by asking ChatGPT-5 to create a list of 50 Lesbian films. I did not provide an additional qualifier, like most popular, highest grossing, or the like, because I wanted to see how the model would fill what the prompt refused to provide. To get a sense of the algorithmic patterns that determine the response, I asked 25 times in separate chats with the memory function disabled. This means I ended up with 25 lists of 50 film titles.
+</p>
 
-                    <p>
-                        I began by asking ChatGPT-5 to create a list of 50 Lesbian films. I did not provide an additional qualifier, like most popular, highest grossing, or the like, because I wanted to see how the model would fill what the prompt refused to provide. To get a sense of the algorithmic patterns that determine the response, I asked 25 times in separate chats with the memory function disabled. This means I ended up with 25 lists of 50 film titles.
-                    </p>
+<section>
+<header>
+<h3>25 Lists of 50 Lesbian Films Analyzed</h3>
+</header>
+<p>
+In 20 of the 25 requests, the model produced a list of 50 titles without any additional context (other than a brief introductory and concluding phrase).
+</p>
+<p>
+Five times (within) 25 inquiries, the model produced a list organized into sub-genres like Classics & Early Representations, Romance & Coming of Age, Indie & International Dramas & Psychological Stories, Indie, Art-House, & Experimental Comedy, Indie & Cult Favorites, and once a Documentary section, which resulted in a more diverse list of films overall.
+</p>
+<p>
+In most lists, though not consistently, ChatGPT provided links to references. Individual titles hyperlinked to a source or the source was listed and linked in parentheses (e.g., an entry might look like this: Mosquita y Mari (2012) (Harper's BAZAAR))
+</p>
+<p>
+Looking at the references, specific sources, expected and unexpected alike, popped up throughout the corpus. An account of the most frequently used words in the corpus also points to the most-referenced source materials. As per Voyant, the most frequently appearing words in the corpus of film lists are as follows:
+</p>
+<p>
+<strong>wikipedia (111); reddit (94); lesbian (86); harper's (83); bazaar (83)</strong>
+</p>
+<p>
+While Wikipedia's and Reddit's presence as source listings are less surprising, the frequency of Harper's Bazaar is unexpected. After inspecting the source, one possible explanation emerges: In April of 2025, Harper's Bazaar published an article named "50 of the Best Lesbian Films of all Time." Crucially, a majority of the words in my prompt are contained in the article's title, including the number 50. This is one possible reason why HB is disproportionately represented in the collected source listings. Research on hiring algorithms (Schellmann, 2025) shows that, left to their own devices, algorithms evaluate data points based on frequency in training data rather than salience. This is why a hiring algorithm, for example, might conclude that the name "Tom" is a good indicator of future job performance (Schellman) and also why algorithms tasked with producing a list of 50 Lesbian Films might think the number of films is just as important as the content.
+</p>
+<p>
+Were I to create a list on my own, I would privilege specifically queer publications and rely on (some of) them to provide more nuanced distinctions between films and evaluation metrics (i.e., not necessarily metrics like most popular or most profitable) and a sense of which sub-genre a film belongs to. Of course, I might also ask the model to privilege my preferred sources, but my intent was to get an understanding of how ChatGPT assembles its outputs and, therefore, its expertise.
+</p>
+<p>
+The model did find its way to some perhaps more queer/lesbian-specific publications: "Lesbian (86)" refers to the word "lesbian" in several different contexts and also points to a few unspecified sources via appended annotations like "(often included in lesbian / queer film lists) (Saint Paul Public Library)." The Saint Paul Public Library, by the way, is referenced 9 times throughout the corpus. Overall, Wikipedia is the only source with over 100 mentions, Reddit receives 94 mentions, IMDb receives 70, and, among the other explicitly queer publications, Autostraddle serves as a reference 23 times, Out Magazine 13 times.
+</p>
+</section>
 
-                    <section>
-                        <header>
-                            <h3>25 Lists of 50 Lesbian Films Analyzed</h3>
-                        </header>
-                        <p>
-                            In 20 of the 25 requests, the model produced a list of 50 titles without any additional context (other than a brief introductory and concluding phrase).
-                        </p>
-                        <p>
-                            Five times (within) 25 inquiries, the model produced a list organized into sub-genres like Classics & Early Representations, Romance & Coming of Age, Indie & International Dramas & Psychological Stories, Indie, Art-House, & Experimental Comedy, Indie & Cult Favorites, and once a Documentary section, which resulted in a more diverse list of films overall.
-                        </p>
-                        <p>
-                            In most lists, though not consistently, ChatGPT provided links to references. Individual titles hyperlinked to a source or the source was listed and linked in parentheses (e.g., an entry might look like this: Mosquita y Mari (2012) (Harper's BAZAAR))
-                        </p>
-                        <p>
-                            Looking at the references, specific sources, expected and unexpected alike, popped up throughout the corpus. An account of the most frequently used words in the corpus also points to the most-referenced source materials. As per Voyant, the most frequently appearing words in the corpus of film lists are as follows:
-                        </p>
-                        <p>
-                            <strong>wikipedia (111); reddit (94); lesbian (86); harper's (83); bazaar (83)</strong>
-                        </p>
-                        <p>
-                            While Wikipedia's and Reddit's presence as source listings are less surprising, the frequency of Harper's Bazaar is unexpected. After inspecting the source, one possible explanation emerges: In April of 2025, Harper's Bazaar published an article named "50 of the Best Lesbian Films of all Time." Crucially, a majority of the words in my prompt are contained in the article's title, including the number 50. This is one possible reason why HB is disproportionately represented in the collected source listings. Research on hiring algorithms (Schellmann, 2025) shows that, left to their own devices, algorithms evaluate data points based on frequency in training data rather than salience. This is why a hiring algorithm, for example, might conclude that the name "Tom" is a good indicator of future job performance (Schellman) and also why algorithms tasked with producing a list of 50 Lesbian Films might think the number of films is just as important as the content.
-                        </p>
-                        <p>
-                            Were I to create a list on my own, I would privilege specifically queer publications and rely on (some of) them to provide more nuanced distinctions between films and evaluation metrics (i.e., not necessarily metrics like most popular or most profitable) and a sense of which sub-genre a film belongs to. Of course, I might also ask the model to privilege my preferred sources, but my intent was to get an understanding of how ChatGPT assembles its outputs and, therefore, its expertise.
-                        </p>
-                        <p>
-                            The model did find its way to some perhaps more queer/lesbian-specific publications: "Lesbian (86)" refers to the word "lesbian" in several different contexts and also points to a few unspecified sources via appended annotations like "(often included in lesbian / queer film lists) (Saint Paul Public Library)." The Saint Paul Public Library, by the way, is referenced 9 times throughout the corpus. Overall, Wikipedia is the only source with over 100 mentions, Reddit receives 94 mentions, IMDb receives 70, and, among the other explicitly queer publications, Autostraddle serves as a reference 23 times, Out Magazine 13 times.
-                        </p>
-                    </section>
+<section>
+<header>
+<h3>Frequency Distribution</h3>
+</header>
+<p>
+With source distribution in mind, we can now look at the frequency of individual titles in the corpus.
+</p>
+<span class="image featured" style="margin-top: -1em; margin-bottom: 1.8em;"><img src="images/full-list.jpg" alt="Frequency distribution of film titles across 25 lists" /></span>
+<p>
+<i>This image shows the frequency distribution within the first 25 films in the 25 lists ChatGPT-5 created.</i>
+</p>
+<p>
+Blue fields contain film titles that appeared more than 20 times in the corpus of 25 top 50 lists. (Some of them appeared over 25 times, indicating repetitions within the same list.) This list includes 17 films that build the basis for the in-depth analysis to come. Green fields signify films that appeared between 10 and 19 times in the collection. Yellow fields indicate films with 2-9 mentions in the overall corpus, and pink tones indicate titles with only a single mention in the corpus.
+</p>
 
-                    <section>
-                        <header>
-                            <h3>Frequency Distribution</h3>
-                        </header>
-                        <p>
-                            With source distribution in mind, we can now look at the frequency of individual titles in the corpus.
-                        </p>
-                        <span class="image featured" style="margin-top: -1em; margin-bottom: 1.8em;"><img src="images/full-list.jpg" alt="Frequency distribution of film titles across 25 lists" /></span>
-                        <p>
-                            <i>This image shows the frequency distribution within the first 25 films in the 25 lists ChatGPT-5 created.</i>
-                        </p>
-                        <p>
-                            Blue fields contain film titles that appeared more than 20 times in the corpus of 25 top 50 lists. (Some of them appeared over 25 times, indicating repetitions within the same list.) This list includes 17 films that build the basis for the in-depth analysis to come. Green fields signify films that appeared between 10 and 19 times in the collection. Yellow fields indicate films with 2-9 mentions in the overall corpus, and pink tones indicate titles with only a single mention in the corpus.
-                        </p>
-                        <p>
-                            We can also notice that the final 5 columns in the data set – the 5 lists that featured a genre-based division – expanded on the patterns of the previous lists a bit, though the most frequently mentioned films remain well-represented.
-                        </p>
-                    </section>
+<!-- CHART 1: Number of Titles by Occurrence Group -->
+<div class="chart-container">
+<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Number of Titles by Occurrence Group</text>
+  
+  <text x="145" y="72" text-anchor="end" font-size="12" fill="#333">Over 20 Occurrences</text>
+  <text x="145" y="122" text-anchor="end" font-size="12" fill="#333">10–19 Occurrences</text>
+  <text x="145" y="172" text-anchor="end" font-size="12" fill="#333">2–9 Occurrences</text>
+  <text x="145" y="222" text-anchor="end" font-size="12" fill="#333">Single Occurrence</text>
+  
+  <line x1="155" y1="245" x2="580" y2="245" stroke="#ccc" stroke-width="1"/>
+  <line x1="155" y1="45" x2="155" y2="245" stroke="#ccc" stroke-width="1"/>
+  <line x1="155" y1="245" x2="155" y2="250" stroke="#666" stroke-width="1"/>
+  <line x1="258" y1="245" x2="258" y2="250" stroke="#666" stroke-width="1"/>
+  <line x1="361" y1="245" x2="361" y2="250" stroke="#666" stroke-width="1"/>
+  <line x1="464" y1="245" x2="464" y2="250" stroke="#666" stroke-width="1"/>
+  <line x1="567" y1="245" x2="567" y2="250" stroke="#666" stroke-width="1"/>
+  
+  <text x="155" y="263" text-anchor="middle" font-size="10" fill="#666">0</text>
+  <text x="258" y="263" text-anchor="middle" font-size="10" fill="#666">30</text>
+  <text x="361" y="263" text-anchor="middle" font-size="10" fill="#666">60</text>
+  <text x="464" y="263" text-anchor="middle" font-size="10" fill="#666">90</text>
+  <text x="567" y="263" text-anchor="middle" font-size="10" fill="#666">120</text>
+  <text x="360" y="278" text-anchor="middle" font-size="11" fill="#666">Number of Titles</text>
+  
+  <rect x="155" y="55" width="58" height="30" fill="#1E90FF" rx="2"/>
+  <text x="220" y="75" font-size="12" font-weight="bold" fill="#333">17</text>
+  
+  <rect x="155" y="105" width="79" height="30" fill="#00FF00" rx="2"/>
+  <text x="241" y="125" font-size="12" font-weight="bold" fill="#333">23</text>
+  
+  <rect x="155" y="155" width="320" height="30" fill="#FFFF00" rx="2"/>
+  <text x="482" y="175" font-size="12" font-weight="bold" fill="#333">93</text>
+  
+  <rect x="155" y="205" width="412" height="30" fill="#DB7093" rx="2"/>
+  <text x="574" y="225" font-size="12" font-weight="bold" fill="#333">123</text>
+</svg>
+</div>
+<p class="chart-caption">Distribution of 256 unique titles across frequency groups.</p>
 
-                    <section>
-                        <header>
-                            <h3>Repetitions and the Top 17</h3>
-                        </header>
-                        <p>
-                            A closer look at the most often mentioned films below indicates another quirk: Repetitions within a single list do occur. The 4 most represented films occur more than 25 times in 25 lists:
-                        </p>
-                        <p>
-                            <strong>Portrait of a Lady on Fire: 31</strong><br />
-                            <strong>Carol: 28</strong><br />
-                            <strong>Blue is the Warmest Color: 27</strong><br />
-                            <strong>Bound: 26</strong>
-                        </p>
-                        <p>
-                            Sometimes the model will list a repetition and mark it as such, then offer an alternative, effectively giving a repetition + an alternative. E.g., "Gia (1998) — okay, I realize I already listed that; replace duplicate with Rafiki (2018)" In these cases, I counted both films listed.
-                        </p>
-                        <p>
-                            Additional details further define the 17 most mentioned films:
-                        </p>
-                        <p>
-                            <strong>By decade:</strong> 1 from the 1980s, 6 from the 1990s, 2 from the 2000s, 7 from the 2010s, and none after 2019.
-                        </p>
-                        <p>
-                            <strong>By country:</strong> 10 from (or primarily from) the USA, 2 from France, 3 from the UK, 1 from South Korea, and 1 from India.
-                        </p>
-                        <p>
-                            While the set of 17 films shows some variety — in addition to the international titles, the US titles include at least 4 films with POC protagonists — it is surprising that no films after 2019 made the cut and that a majority of titles are allocated to the 1990s and the 2010s. To what extent this reflects larger cultural dynamics in these decades rather than ChatGPT-5's algorithmic peculiarity, remains to be discussed.
-                        </p>
-                        <p>
-                            Using this set of 17 most frequently mentioned films, I assembled data sets for each film, composed of existing IMDB data and Gen-AI-generated related data. (See details in the <a href="data-overview.html">Data Overview</a> section.)
-                        </p>
-                    </section>
+<!-- CHART 4: Distribution of Mentions (pie chart) -->
+<div class="chart-container">
+<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="260" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Distribution of Mentions</text>
+  
+  <path d="M 150 150 L 150 55 A 95 95 0 0 1 233.8 194.7 Z" fill="#1E90FF"/>
+  <path d="M 150 150 L 233.8 194.7 A 95 95 0 0 1 96.2 228.3 Z" fill="#00FF00"/>
+  <path d="M 150 150 L 96.2 228.3 A 95 95 0 0 1 95.1 72.5 Z" fill="#FFFF00"/>
+  <path d="M 150 150 L 95.1 72.5 A 95 95 0 0 1 150 55 Z" fill="#DB7093"/>
+  
+  <text x="190" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">33%</text>
+  <text x="180" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">27%</text>
+  <text x="100" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">31%</text>
+  <text x="125" y="85" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">10%</text>
+  
+  <line x1="200" y1="100" x2="280" y2="70" stroke="#333" stroke-width="1.5"/>
+  <circle cx="200" cy="100" r="3" fill="#333"/>
+  
+  <rect x="275" y="45" width="200" height="55" rx="4" fill="#f8f8f8" stroke="#ddd" stroke-width="1"/>
+  <text x="285" y="65" font-size="11" font-weight="bold" fill="#333">Just 17 titles</text>
+  <text x="285" y="80" font-size="10" fill="#666">account for 33% of all mentions</text>
+  <text x="285" y="93" font-size="9" fill="#888">(only 7% of the 256 unique titles)</text>
+  
+  <rect x="290" y="115" width="12" height="12" fill="#1E90FF" rx="2"/>
+  <text x="307" y="125" font-size="10" fill="#333">Over 20 occurrences (17 titles)</text>
+  <rect x="290" y="133" width="12" height="12" fill="#00FF00" rx="2"/>
+  <text x="307" y="143" font-size="10" fill="#333">10–19 occurrences (23 titles)</text>
+  <rect x="290" y="151" width="12" height="12" fill="#FFFF00" rx="2"/>
+  <text x="307" y="161" font-size="10" fill="#333">2–9 occurrences (93 titles)</text>
+  <rect x="290" y="169" width="12" height="12" fill="#DB7093" rx="2"/>
+  <text x="307" y="179" font-size="10" fill="#333">Single occurrence (123 titles)</text>
+  
+  <text x="260" y="260" text-anchor="middle" font-size="10" fill="#888">1,253 total mentions across 25 lists</text>
+</svg>
+</div>
 
-                    <!-- Explore More Analysis -->
-                    <section>
-                        <header>
-                            <h3>Explore More Analysis</h3>
-                        </header>
-                        <div class="row">
-                            <div class="col-4 col-6-medium col-12-small">
-                                <article class="box post-summary">
-                                    <h4><a href="log-line-comparisons.html">Say it in One Sentence: Log-Line Comparisons</a></h4>
-                                </article>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <article class="box post-summary">
-                                    <h4><a href="image-description-analysis.html">More Sentences, Please: Image Description Analysis</a></h4>
-                                </article>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <article class="box post-summary">
-                                    <h4><a href="poster-bot.html">Poster Bot: GenAI Film Posters & Title Comparison</a></h4>
-                                </article>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <article class="box post-summary">
-                                    <h4><a href="closeup-carol.html">Close-Up: Carol</a></h4>
-                                </article>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <article class="box post-summary">
-                                    <h4><a href="closeup-pariah.html">Close-Up: Pariah</a></h4>
-                                </article>
-                            </div>
-                        </div>
-                    </section>
+<p>
+We can also notice that the final 5 columns in the data set – the 5 lists that featured a genre-based division – expanded on the patterns of the previous lists a bit, though the most frequently mentioned films remain well-represented.
+</p>
+</section>
 
-                </article>
+<section>
+<header>
+<h3>Repetitions and the Top 17</h3>
+</header>
+<p>
+A closer look at the most often mentioned films below indicates another quirk: Repetitions within a single list do occur. The 4 most represented films occur more than 25 times in 25 lists:
+</p>
+<p>
+Sometimes the model will list a repetition and mark it as such, then offer an alternative, effectively giving a repetition + an alternative. E.g., "Gia (1998) — okay, I realize I already listed that; replace duplicate with Rafiki (2018)" In these cases, I counted both films listed.
+</p>
+<p>
+<strong>Portrait of a Lady on Fire: 31</strong><br />
+<strong>Carol: 28</strong><br />
+<strong>Blue is the Warmest Color: 27</strong><br />
+<strong>Bound: 26</strong>
+</p>
 
-            </div>
-        </section>
+<!-- CHART 5: Top 17 Films Bar Chart (TALL - fixed viewBox) -->
+<div class="chart-container tall">
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">The Top 17: Most Frequently Mentioned Films</text>
+  <text x="300" y="42" text-anchor="middle" font-size="11" fill="#666">Films appearing 20+ times across 25 lists</text>
+  
+  <line x1="235" y1="55" x2="235" y2="455" stroke="#ccc" stroke-width="1"/>
+  <line x1="235" y1="455" x2="560" y2="455" stroke="#ccc" stroke-width="1"/>
+  
+  <line x1="235" y1="455" x2="235" y2="460" stroke="#666"/>
+  <text x="235" y="473" text-anchor="middle" font-size="10" fill="#666">0</text>
+  <line x1="335" y1="455" x2="335" y2="460" stroke="#666"/>
+  <text x="335" y="473" text-anchor="middle" font-size="10" fill="#666">10</text>
+  <line x1="435" y1="455" x2="435" y2="460" stroke="#666"/>
+  <text x="435" y="473" text-anchor="middle" font-size="10" fill="#666">20</text>
+  <line x1="535" y1="455" x2="535" y2="460" stroke="#666"/>
+  <text x="535" y="473" text-anchor="middle" font-size="10" fill="#666">30</text>
+  <text x="397" y="493" text-anchor="middle" font-size="11" fill="#666">Number of Occurrences</text>
+  
+  <line x1="335" y1="55" x2="335" y2="455" stroke="#eee" stroke-width="1"/>
+  <line x1="435" y1="55" x2="435" y2="455" stroke="#eee" stroke-width="1"/>
+  <line x1="535" y1="55" x2="535" y2="455" stroke="#eee" stroke-width="1"/>
+  
+  <text x="230" y="74" text-anchor="end" font-size="11" fill="#333">Portrait of a Lady on Fire</text>
+  <rect x="235" y="62" width="310" height="20" fill="#1E90FF" rx="2"/>
+  <text x="550" y="76" font-size="10" font-weight="bold" fill="#333">31</text>
+  
+  <text x="230" y="98" text-anchor="end" font-size="11" fill="#333">Carol</text>
+  <rect x="235" y="86" width="280" height="20" fill="#1E90FF" rx="2"/>
+  <text x="520" y="100" font-size="10" font-weight="bold" fill="#333">28</text>
+  
+  <text x="230" y="122" text-anchor="end" font-size="11" fill="#333">Blue is the Warmest Color</text>
+  <rect x="235" y="110" width="270" height="20" fill="#1E90FF" rx="2"/>
+  <text x="510" y="124" font-size="10" font-weight="bold" fill="#333">27</text>
+  
+  <text x="230" y="146" text-anchor="end" font-size="11" fill="#333">Bound</text>
+  <rect x="235" y="134" width="260" height="20" fill="#1E90FF" rx="2"/>
+  <text x="500" y="148" font-size="10" font-weight="bold" fill="#333">26</text>
+  
+  <text x="230" y="170" text-anchor="end" font-size="11" fill="#333">Watermelon Woman</text>
+  <rect x="235" y="158" width="250" height="20" fill="#1E90FF" rx="2"/>
+  <text x="490" y="172" font-size="10" font-weight="bold" fill="#333">25</text>
+  
+  <text x="230" y="194" text-anchor="end" font-size="11" fill="#333">But I'm a Cheerleader</text>
+  <rect x="235" y="182" width="250" height="20" fill="#1E90FF" rx="2"/>
+  <text x="490" y="196" font-size="10" font-weight="bold" fill="#333">25</text>
+  
+  <text x="230" y="218" text-anchor="end" font-size="11" fill="#333">Imagine Me &amp; You</text>
+  <rect x="235" y="206" width="250" height="20" fill="#1E90FF" rx="2"/>
+  <text x="490" y="220" font-size="10" font-weight="bold" fill="#333">25</text>
+  
+  <text x="230" y="242" text-anchor="end" font-size="11" fill="#333">Saving Face</text>
+  <rect x="235" y="230" width="250" height="20" fill="#1E90FF" rx="2"/>
+  <text x="490" y="244" font-size="10" font-weight="bold" fill="#333">25</text>
+  
+  <text x="230" y="266" text-anchor="end" font-size="11" fill="#333">The Handmaiden</text>
+  <rect x="235" y="254" width="250" height="20" fill="#1E90FF" rx="2"/>
+  <text x="490" y="268" font-size="10" font-weight="bold" fill="#333">25</text>
+  
+  <text x="230" y="290" text-anchor="end" font-size="11" fill="#333">Pariah</text>
+  <rect x="235" y="278" width="250" height="20" fill="#1E90FF" rx="2"/>
+  <text x="490" y="292" font-size="10" font-weight="bold" fill="#333">25</text>
+  
+  <text x="230" y="314" text-anchor="end" font-size="11" fill="#333">Go Fish</text>
+  <rect x="235" y="302" width="230" height="20" fill="#1E90FF" rx="2"/>
+  <text x="470" y="316" font-size="10" font-weight="bold" fill="#333">23</text>
+  
+  <text x="230" y="338" text-anchor="end" font-size="11" fill="#333">Two Girls in Love</text>
+  <rect x="235" y="326" width="220" height="20" fill="#1E90FF" rx="2"/>
+  <text x="460" y="340" font-size="10" font-weight="bold" fill="#333">22</text>
+  
+  <text x="230" y="362" text-anchor="end" font-size="11" fill="#333">Fire</text>
+  <rect x="235" y="350" width="220" height="20" fill="#1E90FF" rx="2"/>
+  <text x="460" y="364" font-size="10" font-weight="bold" fill="#333">22</text>
+  
+  <text x="230" y="386" text-anchor="end" font-size="11" fill="#333">Gia</text>
+  <rect x="235" y="374" width="210" height="20" fill="#1E90FF" rx="2"/>
+  <text x="450" y="388" font-size="10" font-weight="bold" fill="#333">21</text>
+  
+  <text x="230" y="410" text-anchor="end" font-size="11" fill="#333">Desert Hearts</text>
+  <rect x="235" y="398" width="210" height="20" fill="#1E90FF" rx="2"/>
+  <text x="450" y="412" font-size="10" font-weight="bold" fill="#333">21</text>
+  
+  <text x="230" y="434" text-anchor="end" font-size="11" fill="#333">Mosquita y Mari</text>
+  <rect x="235" y="422" width="200" height="20" fill="#1E90FF" rx="2"/>
+  <text x="440" y="436" font-size="10" font-weight="bold" fill="#333">20</text>
+  
+  <text x="230" y="458" text-anchor="end" font-size="11" fill="#333">Miseducation of Cameron Post</text>
+  <rect x="235" y="446" width="200" height="20" fill="#1E90FF" rx="2"/>
+  <text x="440" y="460" font-size="10" font-weight="bold" fill="#333">20</text>
+</svg>
+</div>
 
-        <!-- Footer -->
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-8 col-12-medium">
-                        <section>
-                            <header>
-                                <h2>About This Project</h2>
-                            </header>
-                            <p>
-                                This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
-                            </p>
-                        </section>
-                    </div>
-                    <div class="col-4 col-12-medium">
-                        <section>
-                            <header>
-                                <h2>Contact</h2>
-                            </header>
-                            <ul class="contact">
-                                <li>
-                                    <h3>Mail</h3>
-                                    <p><a href="#">mbaker3@gradcenter.cuny.edu</a></p>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div class="col-12">
-                        <div id="copyright">
-                            <ul class="links">
-                                <li>&copy; mgb513. All rights reserved.</li>
-                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<p>
+Additional details further define the 17 most mentioned films:
+</p>
 
-    </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+<!-- CHART 6: Timeline Scatter (TALL - fixed viewBox) -->
+<div class="chart-container tall">
+<svg viewBox="0 0 650 480" xmlns="http://www.w3.org/2000/svg">
+  <text x="325" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Top 17 Films: Year vs. Occurrence Count</text>
+  <text x="325" y="42" text-anchor="middle" font-size="11" fill="#666">Colored by country of origin</text>
+  
+  <line x1="100" y1="70" x2="100" y2="320" stroke="#ddd" stroke-width="1"/>
+  <text x="100" y="335" text-anchor="middle" font-size="10" fill="#999">1980</text>
+  <line x1="211" y1="70" x2="211" y2="320" stroke="#ddd" stroke-width="1"/>
+  <text x="211" y="335" text-anchor="middle" font-size="10" fill="#999">1990</text>
+  <line x1="322" y1="70" x2="322" y2="320" stroke="#ddd" stroke-width="1"/>
+  <text x="322" y="335" text-anchor="middle" font-size="10" fill="#999">2000</text>
+  <line x1="433" y1="70" x2="433" y2="320" stroke="#ddd" stroke-width="1"/>
+  <text x="433" y="335" text-anchor="middle" font-size="10" fill="#999">2010</text>
+  <line x1="544" y1="70" x2="544" y2="320" stroke="#ddd" stroke-width="1"/>
+  <text x="544" y="335" text-anchor="middle" font-size="10" fill="#999">2020</text>
+  <line x1="600" y1="70" x2="600" y2="320" stroke="#ddd" stroke-width="1"/>
+  <text x="600" y="335" text-anchor="middle" font-size="10" fill="#999">2025</text>
+  
+  <text x="90" y="305" text-anchor="end" font-size="10" fill="#999">20</text>
+  <line x1="100" y1="301" x2="600" y2="301" stroke="#eee" stroke-width="1"/>
+  <text x="90" y="266" text-anchor="end" font-size="10" fill="#999">22</text>
+  <line x1="100" y1="262" x2="600" y2="262" stroke="#eee" stroke-width="1"/>
+  <text x="90" y="228" text-anchor="end" font-size="10" fill="#999">24</text>
+  <line x1="100" y1="224" x2="600" y2="224" stroke="#eee" stroke-width="1"/>
+  <text x="90" y="190" text-anchor="end" font-size="10" fill="#999">26</text>
+  <line x1="100" y1="186" x2="600" y2="186" stroke="#eee" stroke-width="1"/>
+  <text x="90" y="151" text-anchor="end" font-size="10" fill="#999">28</text>
+  <line x1="100" y1="147" x2="600" y2="147" stroke="#eee" stroke-width="1"/>
+  <text x="90" y="113" text-anchor="end" font-size="10" fill="#999">30</text>
+  <line x1="100" y1="109" x2="600" y2="109" stroke="#eee" stroke-width="1"/>
+  <text x="35" y="195" text-anchor="middle" font-size="11" fill="#999" transform="rotate(-90, 35, 195)">Occurrences</text>
+  
+  <rect x="145" y="272" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="155" y="286" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">1</text>
+  <rect x="245" y="233" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="255" y="247" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">2</text>
+  <rect x="256" y="252" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="266" y="266" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">3</text>
+  <rect x="268" y="176" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="278" y="190" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">4</text>
+  <rect x="268" y="195" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="278" y="209" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">5</text>
+  <rect x="280" y="252" width="20" height="20" rx="3" fill="#f4a261" stroke="#fff" stroke-width="2"/>
+  <text x="290" y="266" text-anchor="middle" font-size="9" font-weight="bold" fill="#333">6</text>
+  <rect x="290" y="272" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="300" y="286" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">7</text>
+  <rect x="301" y="195" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="311" y="209" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">8</text>
+  <rect x="356" y="195" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="366" y="209" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">9</text>
+  <rect x="368" y="195" width="20" height="20" rx="3" fill="#2a9d8f" stroke="#fff" stroke-width="2"/>
+  <text x="378" y="209" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">10</text>
+  <rect x="434" y="195" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="444" y="209" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">11</text>
+  <rect x="445" y="291" width="20" height="20" rx="3" fill="#5c4b8a" stroke="#fff" stroke-width="2"/>
+  <text x="455" y="305" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">12</text>
+  <rect x="456" y="156" width="20" height="20" rx="3" fill="#e63946" stroke="#fff" stroke-width="2"/>
+  <text x="466" y="170" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">13</text>
+  <rect x="478" y="137" width="20" height="20" rx="3" fill="#2a9d8f" stroke="#fff" stroke-width="2"/>
+  <text x="488" y="151" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">14</text>
+  <rect x="490" y="195" width="20" height="20" rx="3" fill="#e9c46a" stroke="#fff" stroke-width="2"/>
+  <text x="500" y="209" text-anchor="middle" font-size="9" font-weight="bold" fill="#333">15</text>
+  <rect x="512" y="291" width="20" height="20" rx="3" fill="#2a9d8f" stroke="#fff" stroke-width="2"/>
+  <text x="522" y="305" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">16</text>
+  <rect x="523" y="80" width="20" height="20" rx="3" fill="#e63946" stroke="#fff" stroke-width="2"/>
+  <text x="533" y="94" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">17</text>
+  
+  <rect x="107" y="347" width="14" height="14" rx="2" fill="#5c4b8a" stroke="#fff" stroke-width="1"/>
+  <text x="125" y="358" font-size="10" fill="#333">US (10)</text>
+  <rect x="177" y="347" width="14" height="14" rx="2" fill="#e63946" stroke="#fff" stroke-width="1"/>
+  <text x="195" y="358" font-size="10" fill="#333">France (2)</text>
+  <rect x="262" y="347" width="14" height="14" rx="2" fill="#2a9d8f" stroke="#fff" stroke-width="1"/>
+  <text x="280" y="358" font-size="10" fill="#333">UK co-prod (3)</text>
+  <rect x="372" y="347" width="14" height="14" rx="2" fill="#e9c46a" stroke="#fff" stroke-width="1"/>
+  <text x="390" y="358" font-size="10" fill="#333">S. Korea (1)</text>
+  <rect x="467" y="347" width="14" height="14" rx="2" fill="#f4a261" stroke="#fff" stroke-width="1"/>
+  <text x="485" y="358" font-size="10" fill="#333">India/Canada (1)</text>
+  
+  <text x="105" y="385" font-size="9" fill="#333"><tspan font-weight="bold">1</tspan> Desert Hearts (1985)</text>
+  <text x="105" y="398" font-size="9" fill="#333"><tspan font-weight="bold">2</tspan> Go Fish (1994)</text>
+  <text x="105" y="411" font-size="9" fill="#333"><tspan font-weight="bold">3</tspan> Two Girls in Love (1995)</text>
+  <text x="105" y="424" font-size="9" fill="#333"><tspan font-weight="bold">4</tspan> Bound (1996)</text>
+  <text x="105" y="437" font-size="9" fill="#333"><tspan font-weight="bold">5</tspan> Watermelon Woman (1996)</text>
+  <text x="105" y="450" font-size="9" fill="#333"><tspan font-weight="bold">6</tspan> Fire (1996)</text>
+  <text x="270" y="385" font-size="9" fill="#333"><tspan font-weight="bold">7</tspan> Gia (1998)</text>
+  <text x="270" y="398" font-size="9" fill="#333"><tspan font-weight="bold">8</tspan> But I'm a Cheerleader (1999)</text>
+  <text x="270" y="411" font-size="9" fill="#333"><tspan font-weight="bold">9</tspan> Saving Face (2004)</text>
+  <text x="270" y="424" font-size="9" fill="#333"><tspan font-weight="bold">10</tspan> Imagine Me &amp; You (2005)</text>
+  <text x="270" y="437" font-size="9" fill="#333"><tspan font-weight="bold">11</tspan> Pariah (2011)</text>
+  <text x="270" y="450" font-size="9" fill="#333"><tspan font-weight="bold">12</tspan> Mosquita y Mari (2012)</text>
+  <text x="450" y="385" font-size="9" fill="#333"><tspan font-weight="bold">13</tspan> Blue Is the Warmest Colour (2013)</text>
+  <text x="450" y="398" font-size="9" fill="#333"><tspan font-weight="bold">14</tspan> Carol (2015)</text>
+  <text x="450" y="411" font-size="9" fill="#333"><tspan font-weight="bold">15</tspan> The Handmaiden (2016)</text>
+  <text x="450" y="424" font-size="9" fill="#333"><tspan font-weight="bold">16</tspan> Miseducation of Cameron Post (2018)</text>
+  <text x="450" y="437" font-size="9" fill="#333"><tspan font-weight="bold">17</tspan> Portrait of a Lady on Fire (2019)</text>
+</svg>
+</div>
+<p>
+<strong>By decade:</strong> 1 from the 1980s, 6 from the 1990s, 2 from the 2000s, 7 from the 2010s, and none after 2019.
+</p>
+<p>
+<strong>By country:</strong> 10 from (or primarily from) the USA, 2 from France, 3 from the UK, 1 from South Korea, and 1 from India.
+</p>
+<p>
+While the set of 17 films shows some variety — in addition to the international titles, the US titles include at least 6 films with one or more non-white protagonists — it is surprising that no films after 2019 made the cut and that a majority of titles are allocated to the 1990s and the 2010s. To what extent this reflects larger cultural dynamics in these decades rather than ChatGPT-5's algorithmic peculiarity, remains to be discussed.
+</p>
+<p>
+Using this set of 17 most frequently mentioned films, I assembled data sets for each film, composed of existing IMDB data and Gen-AI-generated related data. (See details in the <a href="data-overview.html">Data Overview</a> section.)
+</p>
+</section>
+
+<!-- Explore More Analysis -->
+<section>
+<header>
+<h3>Explore More Analysis</h3>
+</header>
+<div class="row">
+<div class="col-4 col-6-medium col-12-small">
+<article class="box post-summary">
+<h4><a href="log-line-comparisons.html">Say it in One Sentence: Log-Line Comparisons</a></h4>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box post-summary">
+<h4><a href="image-description-analysis.html">More Sentences, Please: Image Description Analysis</a></h4>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box post-summary">
+<h4><a href="poster-bot.html">Poster Bot: GenAI Film Posters & Title Comparison</a></h4>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box post-summary">
+<h4><a href="closeup-carol.html">Close-Up: Carol</a></h4>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box post-summary">
+<h4><a href="closeup-pariah.html">Close-Up: Pariah</a></h4>
+</article>
+</div>
+</div>
+</section>
+</article>
+</div>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+<div class="container">
+<div class="row">
+<div class="col-8 col-12-medium">
+<section>
+<header>
+<h2>About This Project</h2>
+</header>
+<p>
+This project investigates how generative AI systems assemble, filter, and represent film data—specifically examining lesbian cinema as a case study. Through auditing GenAI outputs across multiple dimensions (text, images, metadata), we explore what gets included, excluded, and transformed in the process.
+</p>
+</section>
+</div>
+<div class="col-4 col-12-medium">
+<section>
+<header>
+<h2>Contact</h2>
+</header>
+<ul class="contact">
+<li>
+<h3>Mail</h3>
+<p><a href="#">mbaker3@gradcenter.cuny.edu</a></p>
+</li>
+</ul>
+</section>
+</div>
+<div class="col-12">
+<div id="copyright">
+<ul class="links">
+<li>&copy; mgb513. All rights reserved.</li>
+<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
