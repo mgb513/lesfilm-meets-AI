@@ -3013,6 +3013,13 @@ header.major {
 #intro {
 	padding-top: 2em;
 }
+/* Text readability improvement */
+article.box.post p {
+    color: #333;
+}
+article.box.post blockquote {
+    color: #444;
+}
 /* ============================================
    CUSTOM ADDITIONS - END
    ============================================ */

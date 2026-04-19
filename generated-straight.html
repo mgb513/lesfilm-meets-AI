@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Generated Straight | Three Degrees of Representation (3°R)</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		/* Header subtitle styling */
+		#header h1 .subtitle {
+			display: block;
+			font-size: 0.5em;
+			font-weight: normal;
+			color: #888;
+			margin-top: 0.25em;
+			letter-spacing: 0.1em;
+		}
+		/* Text readability improvement */
+		article.box.post p {
+			color: #333;
+		}
+		article.box.post blockquote {
+			color: #444;
+		}
+		/* Explore More section styling */
+		.explore-more-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 0.75em;
+			margin-top: 1.5em;
+		}
+		.explore-more-grid .box {
+			border-left: 4px solid #c94663;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			padding: 0.75em 1em;
+		}
+		.explore-more-grid .box h4 {
+			margin: 0;
+			font-size: 1em;
+		}
+		@media screen and (max-width: 980px) {
+			.explore-more-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.explore-more-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+		/* Dark footer override for inner pages */
+		#footer {
+			background: #282828;
+			color: #aaa;
+		}
+		#footer a {
+			color: #ddd;
+		}
+		#footer a:hover {
+			color: #c94663;
+		}
+		#footer #copyright {
+			border-top-color: #444;
+		}
+	</style>
+</head>
+<body class="no-sidebar is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+
+			<!-- Logo -->
+			<h1>
+				<a href="index.html">Three Degrees of Representation (3°R)</a>
+				<span class="subtitle">Auditing GenAI through Lesbian Film Data</span>
+			</h1>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="index.html#context">Context</a>
+						<ul>
+							<li><a href="make-a-list.html">Point of Departure</a></li>
+							<li><a href="venn-diagram.html">A Venn Diagram</a></li>
+							<li><a href="auditing.html">Auditing the Black Box</a></li>
+							<li><a href="what-came-before.html">What Came Before</a></li>
+							<li><a href="research-questions.html">Research Questions</a></li>
+							<li><a href="data-overview.html">Data Overview</a></li>
+						</ul>
+					</li>
+					<li class="current">
+						<a href="index.html#data-analysis">Data Analysis</a>
+						<ul>
+							<li><a href="list-analysis.html">Making a List of 50 Titles</a></li>
+							<li><a href="logline-comparisons.html">Log-Line Comparisons</a></li>
+							<li><a href="poster-bot.html">Queer Poster Bot</a></li>
+							<li><a href="image-descriptions.html">More Sentences, Please</a></li>
+							<li><a href="generated-straight.html">Generated Straight</a></li>
+							<li><a href="glitch-gallery.html">Glitch Gallery</a></li>
+							<li><a href="closeup-carol.html">Close-Up: Carol</a></li>
+							<li><a href="closeup-pariah.html">Close-Up: Pariah</a></li>
+							<li><a href="closeup-savingface.html">Close-Up: Saving Face</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+		</section>
+
+		<!-- Main -->
+		<section id="main">
+			<div class="container">
+
+				<!-- Content -->
+				<article class="box post">
+					<header>
+						<h2>Generated Straight: The Lesbian Omission Tracker</h2>
+					</header>
+
+					<p>
+						Throughout the experiment, I deliberately maintained the word "Lesbian" as a part of my image and text generation requests. I was interested in probing how the term might function as a label affixed to training data. I was also interested in specifically tracking the re-emergence and context of the term through rounds of prompting that would require the model to retrieve it across shifting modalities.
+					</p>
+
+					<p>
+						As I collected more images and text outputs related to the term, however, I did become curious about the durability of Lesbian representation when it is not explicitly requested via language. Having witnessed the disappearance of the term in loglines — the algorithm refused its use and replaced it with more ambiguous language of choice (See: <a href="logline-comparisons.html">Say It in One Sentence</a>) — I wanted to consider the possibility that this newly introduced ambiguity still contained variety, including Lesbian representation. So I decided to use the loglines as prompts for another round of image generation. In addition, I had observed a reduction in linguistic precision and variety in the newly generated Lesbian film titles I had requested for Lesbian film posters, and I wanted to test these titles' potential as a prompt for a new poster as well.
+					</p>
+
+					<p>
+						Two related rounds of engagement with GPT-5 followed. Using the Lesbian film loglines the model had created, I asked for stills based on these loglines and, in another round, for posters for the new titles. But in these rounds, I omitted the word "Lesbian" from my requests. The results, while not surprising, are both noteworthy and dispiriting.
+					</p>
+
+					<p>
+						The loglines, which had already replaced specific identity markers with a more ambiguous focus on the dilemma of choice (between being true to oneself and societal demands), now became prompts that an algorithm could conveniently turn into the same dilemma of choice faced by heterosexually identified protagonists. Unless the logline left little room for doubt that this plot centered on two women, men entered the picture.
+					</p>
+
+					<div style="text-align: center; margin: 2em 0;">
+						<img src="images/unqueer-stills.jpg" alt="Stills generated without the word Lesbian showing straight couples" style="max-width: 70%; height: auto;" />
+					</div>
+
+					<p>
+						Of the 17 images, six have turned un-queer and now feature straight couples. The first image, in the upper right, perhaps most surprisingly, originated as inspired by <em>Portrait of a Lady on Fire</em>, the most-mentioned film in the dataset.
+					</p>
+
+					<div style="text-align: center; margin: 2em 0;">
+						<img src="images/portrait-chatclip.jpg" alt="Chat clip showing Portrait of a Lady on Fire transformation" style="max-width: 70%; height: auto;" />
+					</div>
+
+					<p>
+						If we consider this image in conjunction with the ambiguity around identity present in the corresponding logline, we can see how easily the choice between "duty, reputation —and the life they secretly long for" has now been transposed into a set of circumstances that hint at a struggle around class (heiress and painter) rather than sexuality.
+					</p>
+
+					<p>
+						Other loglines, too, that describe their protagonists by profession, elicit responses that result in depictions of heterosexual couples. In a series inspired by <em>Imagine Me & You</em>, the same logline served as the prompt for a Lesbian film poster ("Create a film poster for a Lesbian film with the logline [add logline] Be sure to add a title.") and a still with the word Lesbian omitted. ("Create an image based on this: [add logline]")
+					</p>
+
+					<div style="text-align: center; margin: 2em 0;">
+						<img src="images/imagine-trio.jpg" alt="Comparison of Imagine Me & You iterations" style="max-width: 70%; height: auto;" />
+					</div>
+
+					<p>
+						We can see that the "graphic designer" and the "free-spirited local" become a straight couple.
+					</p>
+
+					<p>
+						In addition to the six straight-presenting couples, we still have two images featuring solitary protagonists (derived from <em>The Miseducation of Cameron Post</em> and <em>Pariah</em>), a rendering that has remained stable across GPT-5 iterations. That leaves nine couples depicted as two women, which aligns with loglines that most explicitly mention two women.
+					</p>
+
+					<p>
+						Here is the logline inspired by <em>The Handmaiden</em>: "In 1930s East Asia, a guarded heiress hires a quiet handmaiden — when a secret, forbidden attraction ignites between them, they must decide whether to risk everything for a love that could free them or ruin them both." Both characters mentioned are coded as female in the logline, and, consequently, we receive a depiction of two women that closely adheres to the source of inspiration. (Find the corresponding poster in the third row, third from right in the collection of stills).
+					</p>
+
+					<p>
+						Having noticed how ambiguity in loglines opens the door to (hetero)normativity by turning one third of the dataset un-queer, I became curious about charting the im/possibilities within the vagueness of AI-generated titles. The titles the algorithm offered in previous rounds were explicitly related to my request for a poster for a Lesbian film. As observed in the section on posters and title transformations (See: <a href="poster-bot.html">Queer Poster Bot</a>), the algorithm there, too, replaced specific, name-based, mysterious, or stylized titles with generic, weather-related headings, e.g., <em>Through the Rain</em> or <em>Golden Evening</em>. In this final round, I decided to prompt the model with a film poster request based on the title, omitting the word "Lesbian." Here are the 17 posters I received in return.
+					</p>
+
+					<div style="text-align: center; margin: 2em 0;">
+						<img src="images/no-les-posters.jpg" alt="17 posters generated without the word Lesbian" style="max-width: 70%; height: auto;" />
+					</div>
+
+					<p>
+						None of the generated posters hint at queer protagonists, let alone Lesbian ones. Posters evoking a romance feature heteronormative couples. And although I have no intention of reiterating the work that light distribution and light quality do in these renderings, I must say: Notice the responsibility amber and white (warm and cold) light have to transmit the literal and emotional atmosphere of each poster!
+					</p>
+
+					<p>
+						More essentialist genre decisions have been made by the algorithm, and in addition to romance, the action film and film noir emerge as having their own distinct aesthetic markers in posters. Most interestingly, a composition of three characters, which was impossible in the Lesbian film posters generated by AI. <em>Ledger & Lies</em>, <em>Velvet Smoke</em>, and <em>Wall of Light</em> all feature three characters, two men and one woman, staging triangles of potential desire, none of them legible as queer.
+					</p>
+
+					<p>
+						Horror and thriller tropes govern the posters featuring a lone (recognizable) female character at the center. Three posters fall into this category. <em>Quiet Revolution</em>, <em>Be Seen</em>, and <em>Candlelight Portrait</em>. It's especially interesting to think about how queerness disappears in these images. How do implied genre conventions and particularities of these posters make queer readings unlikely?
+					</p>
+
+					<p>
+						When I asked GPT-5 to affix a genre label to <em>Quiet Revolution</em>, it used "Political Thriller," and <em>Be Seen</em> was described as "Psychological thriller — tense, suspense-driven stalker/obsession story with strong mystery and neo-noir atmosphere." When I asked for a bit more information about the protagonist, the model introduced a main character named Maya Reyes, a woman of 27 or 29, respectively. The small figure at the bottom edge of <em>Be Seen</em> seems to replicate the main figure in <em>Quiet Revolution</em>. Other than the woman's age (young!), no specifics about her external markers are given. In <em>Be Seen</em>, we can read her as white, conventionally pretty, and feminine-presenting. The context displayed in <em>Be Seen</em> is especially concerning. Considering this poster alongside its previous iterations, which had maintained the depiction of an interracial relationship, gives this iteration an awful new resonance. Whose neural pathways are these systems modeling? Again, I am reminded of Joy Buolamwini's term "the Coded Gaze," which refers to the presence of biases in algorithms passed on by those who trained and coded them. Taking all these observations about the character and composition together, arriving at a queer reading seems a stretch that snaps believability.
+					</p>
+
+					<p>
+						Meanwhile, <em>Candlelight Portrait</em>, which GPT-5 describes as "Gothic period mystery thriller — a moody, atmospheric historical drama steeped in gothic intrigue and psychological suspense (with room for subtle supernatural overtones)" takes the doubling effect of the Lesbian couples in previous iterations to a new level by presenting an odd composition of the protagonist and her portrait. Odd because both seem to glance at a viewer who is positioned as the painter might have been. Perhaps cynically, I immediately clock the image as directed at a male viewer. Part of my viewing is also a downstream effect of my understanding of the inspiring film's poster, <em>Portrait of a Lady on Fire</em>. In the original poster, a woman is visible in the glow of a raging fire that consumes the hem of her dark dress. She looks straight at the viewer, exuding a composed self-knowledge. In the generated version inspired by this film, the fire has been tamed into a display of candles; the impression is not one of independence and desire, but one of… I can't think of how to fill in the blank. The glance is no longer direct but more submissive, the head bowed ever so slightly, a more recognizable pose, a glance that forbids access rather than demands it.
+					</p>
+
+					<div style="text-align: center; margin: 2em 0;">
+						<img src="images/fire-pair.jpg" alt="Comparison of Portrait of a Lady on Fire original and generated versions" style="max-width: 70%; height: auto;" />
+					</div>
+
+					<p>
+						And so, any queer hopes hang on <em>Cheer for Keeps</em>, which promises to launch us into the world of competitive cheerleading with three ambitious women who seem to be aiming for the one golden cup at the bottom center of the image. The camp that defined the poster for <em>But I'm a Cheerleader</em> and invited a queer reading has now given way to a sports drama.
+					</p>
+
+					<div style="text-align: center; margin: 2em 0;">
+						<img src="images/cheer-pair.jpg" alt="Comparison of But I'm a Cheerleader original and generated versions" style="max-width: 70%; height: auto;" />
+					</div>
+
+					<p>
+						Straining to see that which probably isn't there demands a hunger for representation and the capacity to read between and beneath the pixels that I cannot and do not have to muster as long as I can return to the original films. To most observers, Lesbians have fallen out of all 17 frames.
+					</p>
+
+					<!-- Explore More Analysis -->
+					<section>
+						<header>
+							<h3>Explore More Analysis</h3>
+						</header>
+						<div class="explore-more-grid">
+							<article class="box post-summary">
+								<h4><a href="list-analysis.html">Making a List of 50 Lesbian Film Titles</a></h4>
+							</article>
+							<article class="box post-summary">
+								<h4><a href="logline-comparisons.html">Say it in one Sentence: The Log-Lines</a></h4>
+							</article>
+							<article class="box post-summary">
+								<h4><a href="poster-bot.html">Queer Poster Bot</a></h4>
+							</article>
+							<article class="box post-summary">
+								<h4><a href="image-descriptions.html">More Sentences, Please</a></h4>
+							</article>
+							<article class="box post-summary">
+								<h4><a href="glitch-gallery.html">Glitch Gallery</a></h4>
+							</article>
+							<article class="box post-summary">
+								<h4><a href="closeup-carol.html">Close-Up: Carol</a></h4>
+							</article>
+							<article class="box post-summary">
+								<h4><a href="closeup-pariah.html">Close-Up: Pariah</a></h4>
+							</article>
+							<article class="box post-summary">
+								<h4><a href="closeup-savingface.html">Close-Up: Saving Face</a></h4>
+							</article>
+						</div>
+					</section>
+
+				</article>
+
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div id="copyright">
+							<ul class="links">
+								<li>&copy; mgb513 · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
